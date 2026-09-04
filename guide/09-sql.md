@@ -1,188 +1,202 @@
-# SQL для сверки оспаривания
+# SQL для сверки оспаривания КИ
 
-SELECT-ы для шага «найти в ПО и решить: подтвердить или править».  
-Писать в задачу `keyPart` / `keyDZ` / УИД / вывод по каждому пункту письма.
+Шаг «найти в ПО и решить: подтвердить или править». В задачу писать `keyPart` / `keyDZ` / УИД / вывод по каждому пункту письма.
 
-База по умолчанию: `cz_newCP`. Титул выгрузок — `CZ_BKI`. Наши запросы в бюро — `CZ_KI`.  
-В выборках договоров: `ISNULL(ForDel, 0) <> -1`. УИД из письма = `Dogovor_Anket.UuidBegin` **без** суффикса `-1` / `-4`.  
-`LIKE` по `KI_FL17.uid` не использовать — медленно; якорь — `UuidBegin` / `keyDZ`.
+Доска: группа Bitrix **437** «Оспаривание КИ».  
+База по умолчанию: `CZ_NewCP`. Титул выгрузок — `CZ_BKI`. Наши запросы в бюро — `CZ_KI`.
 
-DML выгрузок (статусы 13/21/23, `KI_BKI_PrepareData`) — в [02-och.md](02-och.md) и [05-tch.md](05-tch.md), сюда не копировать.
+Комментарии живут в **чате задачи** (`im.dialog.messages.get` по `chatId`), не в `task.commentitem`.  
+Вложения — `UF_TASK_WEBDAV_FILES` и файлы в чате. DML выгрузок (статусы 13/21/23, `KI_BKI_PrepareData`) сюда не копировать.
 
-## 1. Клиент по ФИО или паспорту
+Различай тип задачи:
 
-Серия в ПО слитно (`8012`, не `80 12`). Несколько строк `Partner_FIO` — смотреть актуальную через `Partner.keyFIO` (запрос 2).
+| Тип в заголовке | Что делать |
+| --- | --- |
+| ОСПАРИВАНИЕ | сверка ПО ↔ письмо бюро, оф. ответ / удаление запроса |
+| Корректировка | чужой ДУЛ/паспорт/ИНН в файле CHP/0OA/FCH — не этот набор SELECT, править выгрузку |
+| ОСПАРИВАНИЕ (возврат) / разделение КИ | файл разделения, не обычный `@answer` |
+| ТЕСТ | не клиентский пакет |
 
-```sql
-SELECT TOP 30
-  fio.keyPart, fio.keyFIO, fio.FIO, fio.nam1, fio.nam2, fio.nam3, fio.DataB,
-  ped.Serial, ped.Number, ped.IssuedDate, ped.IssuedCode, ped.ForDel
-FROM cz_newCP.dbo.Partner_FIO fio
-LEFT JOIN cz_newCP.dbo.Partner_Edit_Documents ped
-  ON ped.keyPart = fio.keyPart AND ISNULL(ped.ForDel, 0) <> -1
-WHERE fio.FIO LIKE N'%Фамилия%'
-   OR (ped.Serial = N'8012' AND ped.Number = N'692517')
-ORDER BY fio.keyPart DESC;
-```
+Организации: `keyOH` / `@org` / `Sett.keySett`: **1** Саммит, **4** ЦВ, **5** ПКО «Доброзайм», **6** ДЗБР.
 
-## 2. Актуальное ФИО (не история)
+Бюро `SprAll1.keyS=224` (`Partner_BKI.typeBKI`): **1** НБКИ, **2** Эквифакс, **3** ОКБ, **4** ККИ, **6** ССП НБКИ, **7** КредИнфо. Не путать с `BKI.ContestationAnswerGet.@creditBureau`: 1 НБКИ, 2 Эквифакс/Скоринг, 3 ОКБ.
 
-История может держать старые варианты (Алиткачева / Алипкачева). В ответ и в сверку ТЧ идёт строка с `Partner.keyFIO`.
+---
 
-```sql
-SELECT p.keyPart, p.keyFIO, fio.FIO, fio.nam1, fio.nam2, fio.nam3, fio.DataB,
-       p.INN, p.SNILS
-FROM cz_newCP.dbo.Partner p
-JOIN cz_newCP.dbo.Partner_FIO fio ON fio.keyFIO = p.keyFIO
-WHERE p.keyPart = /* keyPart */;
-```
+## 0. Разбор карточки Bitrix
 
-История ФИО (все записи, в т.ч. `FN_Type` 1 текущее / 2 предыдущее):
+Строка «Данные:»: `keyPart - ФИО (ПД:…) / (keyDZ) - Nomer_дата_сумма / uid`.
 
-```sql
-SELECT keyPEF, FN_Surname, FN_Name, FN_Middlename, FN_DateB, FN_Type, ForDel, dtCrt
-FROM cz_newCP.dbo.Partner_Edit_FullName
-WHERE keyPart = /* keyPart */
-ORDER BY dtCrt DESC;
-```
+Пункт письма (после данных) выбирает запросы ниже:
 
-## 3. Паспорт
+| Формулировка | Раздел |
+| --- | --- |
+| заявка / факт оформления / мошенничество | 4 + договор |
+| запросы / удалить запрос / ССП запрос | 8; ССП — `typeBKI=6` |
+| просрочка / платежи / исполнено в срок | 3 |
+| статус / параметры договора / задолженность / кредит | 4а |
+| продажа / цессия / «договора нет в бюро» | 2 |
+| банкрот | 5 |
+| ФИО | 6 |
+| адрес регистрации | 7 |
+| договор | 2 + 4а |
 
-```sql
-SELECT keyPED, Serial, Number, IssuedDate, IssuedBy, IssuedCode, ForDel
-FROM cz_newCP.dbo.Partner_Edit_Documents
-WHERE keyPart = /* keyPart */
-ORDER BY keyPED DESC;
+Всегда начинай с поиска (п.1), даже если `keyPart`/`keyDZ` уже в описании — сверь УИД и организацию.
 
-SELECT keyOldPasp, PS, PN, dat
-FROM cz_newCP.dbo.Partner_OldPasp
-WHERE keyPart = /* keyPart */;
-```
+---
 
-Титул, который уже уходил в бюро (`CZ_BKI`): если здесь уже «как в заявлении» — 3.1 не готовить, пока ЛК не покажет иное.
+## 1. Поиск клиента — `BKI.ContestationDataSearch`
+
+Параметр **`@parameterList`**, не `@json`. JSON — массив объектов. Часть полей может быть пустой.
 
 ```sql
-SELECT DISTINCT lastName, firstName, midName
-FROM CZ_BKI.dbo.KI_FL1_name WHERE keyPart = /* keyPart */;
+DECLARE @parameterList nvarchar(max) = N''
 
-SELECT DISTINCT idSeries, idNum, issueDate, deptCode
-FROM CZ_BKI.dbo.KI_FL4_id WHERE keyPart = /* keyPart */;
+EXEC BKI.ContestationDataSearch
+  @parameterList = @parameterList
 ```
 
-Адрес (ТЧ FL8/FL9):
+`identifier`: **1** ФИО, **2** дата запроса (`DogovorCred.datAnket`), **3** дата рождения, **4** ПД 10 цифр (серия 4 + номер 6), **5** сумма займа, **6** УИД (`UuidBegin` + контрольный разряд), **7** номер договора (`DogovorCred.Nomer`).
+
+На стенде ХП черновая (нет `#IdentifierList`, лишние отладочные SELECT, `dbo.#ForAppeal`). Если падает — ищи вручную по `keyPart`/`keyDZ`/`Nomer`/`UuidBegin` из карточки.
+
+---
+
+## 2. Продажа / ПКО / цессия
+
+Поиск последней продажи по договору
 
 ```sql
-SELECT TOP 20 *
-FROM cz_newCP.dbo.Partner_Edit_Address
-WHERE keyPart = /* keyPart */;
+SELECT ds.keyDS, ds.keyDZ, ds.dat1, ds.dat2, ds.keyOH_Sell, ds.keyCA, c.NameCA, ds.datCancel
+FROM dbo.Dogovor_Sell AS ds
+WHERE ds.keyDZ = (/* keyDZ */)
+ORDER BY ds.dat1 DESC
 ```
 
-## 4. Договоры и УИД
+`keyOH_Sell`: 1 Саммит, 4 ЦВ, 5 ПКО, 6 ДЗБР (есть и редкие 12/13). Цепочка — по `dat1`. `datCancel` — отмена продажи. Комментарии вида «договор продан», «в ОКБ/ЭКВИ договора нет» — сначала этот запрос, не только статус в `DogovorCred`.
 
-```sql
-SELECT
-  d.keyDZ, d.Nomer, d.SumCred, d.Status, st.StatName,
-  d.dtDog, d.DatDog, d.DatAnket, d.datSign, d.datClose,
-  da.UuidBegin, da.dt_ASP_odobr, da.ASP_cnt
-FROM cz_newCP.dbo.DogovorCred d
-LEFT JOIN cz_newCP.dbo.sprStatusZ st ON st.ID = d.Status
-LEFT JOIN cz_newCP.dbo.Dogovor_Anket da ON da.keyDZ = d.keyDZ
-WHERE d.keyPart = /* keyPart */
-  AND ISNULL(d.ForDel, 0) <> -1
-ORDER BY d.DatDog, d.keyDZ;
-```
+---
 
-Поиск по УИД из письма (без суффикса):
+## 3. График и платежи (просрочка)
 
-```sql
-SELECT d.keyPart, d.keyDZ, d.Nomer, d.Status, da.UuidBegin
-FROM cz_newCP.dbo.Dogovor_Anket da
-JOIN cz_newCP.dbo.DogovorCred d ON d.keyDZ = da.keyDZ
-WHERE da.UuidBegin = '4C2F6783-6BA0-11D9-9752-418D643B662F';
-```
-
-Частые `sprStatusZ`: 2 выдан, 3 закрыт, 4 заявка отклонена, 5 закрыт с просрочкой, 11 отказался клиент, 18 автоотказ, 35 прекращён.
-
-## 5. Продажа / ПКО
-
-```sql
-SELECT ds.keyDS, ds.keyDZ, ds.dat1, ds.dat2, ds.keyOH_Sell, ds.keyCA, c.NameCA
-FROM cz_newCP.dbo.Dogovor_Sell ds
-LEFT JOIN cz_newCP.dbo.sprCollector c ON c.keyCA = ds.keyCA
-WHERE ds.keyDZ IN (/* keyDZ */);
-```
-
-`keyOH_Sell`: 1 Саммит, 5 ПКО «Доброзайм». Цепочка из нескольких строк — читать по `dat1`.
-
-## 6. График и платежи (ОЧ)
-
-`DatPlat` — срок, `DatPlatFact` = дата прекращения/продажи при непогашенном платеже.
+`DatPlat` — дата платежа по графику, `DatPlatFact` = факт / дата фактической оплаты, может отличаться от `DatPlat`
 
 ```sql
 SELECT DatNachisl, DatPlat, DatPlatFact, SumOD, SumPrc
-FROM cz_newCP.dbo.Dogovor_GP
+FROM dbo.Dogovor_GP
 WHERE keyDZ = /* keyDZ */
 ORDER BY DatPlat;
 
+'MemberPay2' - все платежи по клиенту, 'vid=3' - именно платеж
+
 SELECT mp.vid, v.NameSpr, mp.DatPlat, mp.Plateg, mp.Credit, mp.CreditOst
-FROM cz_newCP.dbo.MemberPay2 mp
-LEFT JOIN cz_newCP.dbo.SprAll1 v ON v.keyS = 104 AND v.nom = mp.vid
-WHERE mp.keyDZ = /* keyDZ */ AND ISNULL(mp.ForDel, 0) <> -1
-ORDER BY mp.DatPlat, mp.keyP;
+FROM dbo.MemberPay2 mp
+WHERE mp.keyDZ = /* keyDZ */
+  AND mp.vid = 3
+  AND mp.Plateg > 0
+ORDER BY mp.DatPlat, mp.keyP
 ```
 
-Клиент пишет «исполнено в срок», а `DatPlatFact` позже `DatPlat` — в ответе подтверждать просрочку по ПО, не заявление.
+Клиент пишет «исполнено в срок», а `DatPlatFact` позже `DatPlat` — в ответе подтверждать просрочку по ПО.
 
-## 7. Подписанная анкета (ЗЗ)
+---
 
-`keyRec` = `keyDZ` заявки/договора. `Podpis = -1` — есть ЭП.
+## 4. Заявка / факт оформления / анкета
+
+`keyRec` = `keyDZ`. `Podpis = -1` — есть ЭП.
 
 ```sql
 SELECT FileName, vidDoc, Podpis, DateDoc, keyRec, ForDel
-FROM cz_newCP.dbo.AppFiles
+FROM dbo.AppFiles
 WHERE keyRec = /* keyDZ */
 ORDER BY DateDoc;
 ```
 
-Статус 4 / 11 / 18 сам по себе не повод исключать заявку: сначала этот запрос. Подпись есть или заявка перешла в договор (`datSign` / статус 2, 3, 5, 35) — не исключать, в `@answer` «правомерна / перешла в договор» или «оформлена, анкета подписана».
+Статус 4 / 11 / 18 сам по себе не повод исключать заявку. Подпись есть или заявка перешла в договор (`datSign` / статус 2, 3, 5, 35) — не исключать: «правомерна / перешла в договор» или «оформлена, анкета подписана».
+
+### 4а. Карточка договора (статус, даты, сумма, УИД)
+
+```sql
+SELECT dc.keyPart, dc.keyDZ, dc.Nomer, dc.Status, sz.StatName,
+       dc.datAnket, dc.dat, dc.datSign, dc.datClose, dc.SumCred,
+       LOWER(CONCAT(da.UuidBegin, N'-', da.ctrlRaz)) AS uid
+FROM dbo.DogovorCred dc
+LEFT JOIN dbo.sprStatusZ sz ON sz.ID = dc.Status
+LEFT JOIN dbo.Dogovor_Anket da ON da.keyDZ = dc.keyDZ
+WHERE dc.keyDZ = /* keyDZ */;
+```
+
+«Задолженность» / «кредит» — плюс п.3. «Параметры договора» — этот SELECT, не только график.
+
+---
+
+## 5. Банкротство
+
+```sql
+SELECT keyB, keyPart, TypeBnk, DatEFRSB, DatEndR, NomDela, DeloEnd, DatPrizn, Prim
+FROM dbo.Bankrot
+WHERE keyPart = /* keyPart */;
+```
+
+---
+
+## 6. ФИО (история)
+
+```sql
+SELECT keyFIO, nam1, nam2, nam3, FIO, DataB, datCh
+FROM dbo.Partner_FIO
+WHERE keyPart = /* keyPart */
+ORDER BY keyFIO DESC
+
+SELECT FN_Surname, FN_Name, FN_Middlename, FN_DateB
+FROM dbo.Partner_Edit_FullName
+WHERE keyPart = /* keyPart */
+ORDER BY keyPEF DESC
+```
+
+---
+
+## 7. Адрес регистрации
+
+`Partner_Edit_Address.TypeAddress`: ориентир **2** прописка / регистрация, **3** проживание; `ForDel=0`.
+
+```sql
+SELECT TypeAddress, IndexNum, Region, District, City, Street, House, Housing, Structure, Apartment, DateReg, ForDel, dtCrt
+FROM dbo.Partner_Edit_Address
+WHERE keyPart = /* keyPart */ AND ISNULL(ForDel, 0) = 0
+ORDER BY dtCrt DESC
+```
+
+---
 
 ## 8. Запросы, которые мы слали в бюро
 
 ```sql
-SELECT pb.keyPB, pb.keyDZ, pb.requestTime, pb.typeBKI, b.NameSpr AS Bureau, pb.isError
+SELECT pb.keyPB, pb.keyDZ, pb.keyOH, pb.requestTime, pb.typeBKI, b.NameSpr AS Bureau, pb.isError, pb.channel
 FROM CZ_KI.dbo.Partner_BKI pb
 LEFT JOIN cz_newCP.dbo.SprAll1 b ON b.keyS = 224 AND b.nom = pb.typeBKI
 WHERE pb.keyPart = /* keyPart */
+-- AND pb.typeBKI = 1   -- сузить: 1 НБКИ, 2 Эквифакс, 3 ОКБ, 6 ССП НБКИ, 7 КредИнфо
 ORDER BY pb.requestTime;
 ```
 
-Письмо просит удалить запрос, строки в таблице нет — всё равно слать файл удаления. `typeBKI` на стенде: 1 НБКИ, 2 Эквифакс, 4 ККИ (справочник `SprAll1` keyS=224).
+Письмо просит удалить запрос, строки нет — всё равно слать файл удаления (для НБКИ — п.9 и `BKI.ContestationXmlCreate`). «ССП запрос» — смотри `typeBKI=6`, не обычный НБКИ=1.
 
-## 9. Имя файла удаления запросов НБКИ
-
-```sql
-DECLARE @Date nvarchar(8) = FORMAT(GETDATE(), 'yyyyMMdd'),
-        @Time nvarchar(6) = FORMAT(GETDATE(), 'HHmmss'),
-        @keyOH int = 1;  -- 1 Саммит, 4 ЦВ, 5 ПКО, 6 ДЗБР
-
-SELECT FORMATMESSAGE('%s_%s_%s', S.NBKI_Memb_KI, @Date, @Time)
-FROM cz_newCP.dbo.Sett AS S
-WHERE S.keySett = @keyOH;
-```
-
-Саммит → `WD01BB000002_…xlsx.zip.enc` на CancelCreditHistory@nbki.ru. ПКО → `ZW01RR000001_…`.
+---
 
 ## 10. Шапка официального ответа
 
-Полный скрипт — [`docs/Ответы+на+оспаривания.sql`](../docs/Ответы+на+оспаривания.sql). В шапке только переменные:
+Не скрипт `docs/Ответы+на+оспаривания.sql` (в репозитории его нет). Рабочая ХП:
 
 ```sql
-DECLARE @org smallint = 1,  -- 1 Саммит, 5 ПКО, 6 ДЗБР
-        @creditBureau nvarchar(50) = N'АО «НБКИ»',
-        -- АО «НБКИ» | АО «БКИ «Скоринг Бюро» | АО «ОКБ»
-        @numberMailFromBureau nvarchar(50) = N'ИСХ///242959',
-        @dateMailFromBureau nvarchar(50) = N'30.12.2025',
-        @FIO nvarchar(300) = N'Сахибгареева Лилия Эриковна';
+EXEC BKI.ContestationAnswerGet
+  @organizationId = 1,          -- 1 Саммит, 4 ЦВ, 5 ПКО, 6 ДЗБР
+  @creditBureau   = 1,          -- 1 НБКИ, 2 Эквифакс, 3 ОКБ
+  @mailNumber     = N'ИСХ///…',
+  @dateMail       = N'30.12.2025',
+  @FIO            = N'…',
+  @answer         = N'…',
+  @needSelect     = 1;
 ```
 
-Два адресата в пакете — два прогона (`@org` 1 и 5), два файла. Формулы `@answer` — [07-otvet-i-zakrytie.md](07-otvet-i-zakrytie.md).
+Два адресата в пакете — два прогона (`@organizationId` 1 и 5), два файла. КредИнфо (`typeBKI=7`) этой ХП не покрыт — отдельный канал, в комментариях часто «ответа от КредитИнфо нет».
