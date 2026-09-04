@@ -1,7 +1,7 @@
 # Действия сотрудников: ОЧ и ТЧ
 
 Разбор по человеческим комментариям задач с тегами **ОЧ** (449 с чатом) и **ТЧ** (258 с чатом).  
-Источник: `osparivanie-2026-tasks.csv` + `osparivanie-2026-comments.csv`. Сырые корзины: [actions-och-tch-raw.json](actions-och-tch-raw.json).
+Источник: [../research/osparivanie-2026-tasks.csv](../research/osparivanie-2026-tasks.csv) + [../research/osparivanie-2026-comments.csv](../research/osparivanie-2026-comments.csv). Сырые корзины: [actions-och-tch-raw.json](actions-och-tch-raw.json).
 
 **Важно:** правка в ПО через UI часто **не пишется** в чат (нет SQL). Поэтому три уровня сигнала:
 

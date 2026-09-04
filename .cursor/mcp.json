@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "mssql-mcp": {
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "E:/repos/mcp-ms-sql/vendor/mssql-mcp/src/mssql-mcp/mssql-mcp.csproj",
+        "-c",
+        "Release",
+        "--no-launch-profile",
+        "--",
+        "--access-mode",
+        "restricted"
+      ],
+      "env": {
+        "MSSQL_CONNECTION_STRING": "Server=s-po-dev.dc.centrzaimov.ru,4644;Database=cz_newcp;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadOnly;",
+        "MSSQL_ACCESS_MODE": "restricted",
+        "MSSQL_QUERY_TIMEOUT": "30",
+        "MSSQL_MAX_RESULT_BYTES": "10485760"
+      }
+    }
+  }
+}

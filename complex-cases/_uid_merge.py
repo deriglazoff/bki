@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-ROOT = Path(r"C:\repos\bki\complex-cases")
+ROOT = Path(__file__).resolve().parent
 PAGES = ROOT / "_uid-pages"
 OUT = ROOT / "uid-raw-descriptions.json"
 IDS = ROOT / "uid-raw-ids.txt"

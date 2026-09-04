@@ -20,6 +20,6 @@
 | [actions-och-tch-raw.json](actions-och-tch-raw.json) | Сырые корзины по задачам |
 | [stats.json](stats.json) | Сводка по выгрузке 2026 |
 
-Источник типов: [../type.md](../type.md), полный справочник с подтипами: [../classification.md](../classification.md).  
-Встреча: [../miteng.md](../miteng.md).  
-Данные: `osparivanie-2026-tasks.csv`, `osparivanie-2026-comments.csv`.
+Источник типов: [../classification.md](../classification.md) (SoT); краткий список — [../type.md](../type.md).  
+Встреча и корпус: [../research/](../research/) (`miteng.md`, CSV выгрузки).  
+Пересборка аналогов: `python complex-cases/rebuild_from_csv.py` (читает CSV из `research/`).

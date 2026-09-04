@@ -1,5 +1,7 @@
 # ОЧ — основная часть
 
+Правила решения R1–R6 (карточка договора): [../complex-cases/och-card.md](../complex-cases/och-card.md). Эталоны формулировок: [../complex-cases/och-gold-set.md](../complex-cases/och-gold-set.md). Агент: скилл `solve-osparivanie`.
+
 Пример из инструкции: [задача 412972](https://resultforyou.ru/workgroups/group/437/tasks/task/view/412972/).
 
 ## Что сделать сотруднику

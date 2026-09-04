@@ -4,3 +4,9 @@
 /.tmp*
 /run
 /task-pdfs
+__pycache__/
+*.pyc
+* — копия.csv
+* — копия.*
+.DS_Store
+Thumbs.db

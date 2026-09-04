@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+RESEARCH = ROOT / "research"
 OUT = Path(__file__).resolve().parent
 
 
@@ -35,9 +36,9 @@ def clean(text: str) -> str:
 
 
 def main() -> None:
-    with open(ROOT / "osparivanie-2026-tasks.csv", encoding="utf-8-sig") as f:
+    with open(RESEARCH / "osparivanie-2026-tasks.csv", encoding="utf-8-sig") as f:
         tasks = {t["task_id"]: t for t in csv.DictReader(f, delimiter=";")}
-    with open(ROOT / "osparivanie-2026-comments.csv", encoding="utf-8-sig") as f:
+    with open(RESEARCH / "osparivanie-2026-comments.csv", encoding="utf-8-sig") as f:
         comments = list(csv.DictReader(f, delimiter=";"))
 
     human = [c for c in comments if c["is_system"] == "0"]

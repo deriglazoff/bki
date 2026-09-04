@@ -2,10 +2,10 @@
 name: classify-osparivanie
 description: >-
   Classifies a Bitrix credit-history dispute task (оспаривание КИ) from a task
-  URL: reads attached ishod/vhod files, applies classification.md, posts the
-  classification as a task comment. Use when the user asks for классификация
+  URL: reads attached ishod/vhod files, applies classification.md, posts only
+  tags/subtypes as a task comment. Use when the user asks for классификация
   задачи, теги ЗЗ/ОЧ/ТЧ/Б/ЗС, or pastes .../tasks/task/view/{id}/ together with
-  классификация, classification.md, or оспаривание.
+  классификация or classification.md — not for full solve/сверка.
 ---
 
 # Классификация задачи оспаривания
@@ -14,7 +14,7 @@ description: >-
 
 Интервью не проводить. Задачу не закрывать.
 
-MCP: namespace `user-bitrix24`. Если tools недоступны — сначала `mcp_auth`.
+MCP: namespace `user-bitrix24-test`. Если tools недоступны — сначала `mcp_auth`.
 
 ## 1. Взять задачу и файлы
 

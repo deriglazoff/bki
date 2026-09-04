@@ -1,5 +1,7 @@
 # Б — банкротство
 
+Карточка фактов: [../complex-cases/assist-facts.md](../complex-cases/assist-facts.md) (§Б). Агент: скилл `solve-osparivanie`.
+
 Пример «всё корректно»: [задача 409009](https://resultforyou.ru/workgroups/group/437/tasks/task/view/409009/).  
 Пример «в ПО выдан, надо прекратить»: [задача 400013](https://resultforyou.ru/workgroups/group/437/tasks/task/view/400013/).
 
