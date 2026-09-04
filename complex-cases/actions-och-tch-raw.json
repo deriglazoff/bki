@@ -1,0 +1,1353 @@
+{
+  "ОЧ": {
+    "n": 449,
+    "buckets": {
+      "E_process_reply_only": 168,
+      "D_verify_ok_generic": 54,
+      "F_unclear": 50,
+      "B_correction_upload": 47,
+      "B_correction_then_ok": 39,
+      "D_verify_ok_overdue": 26,
+      "D_verify_ok_bankrot": 20,
+      "D_verify_ok_closed": 18,
+      "E_process_interim": 14,
+      "D_verify_ok_pko": 7,
+      "A_db_change": 6
+    },
+    "samples": {
+      "E_process_reply_only": [
+        {
+          "task_id": "446097",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446097/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 5361558 Валеев Наиль Рафианович",
+          "hits": [
+            "official"
+          ],
+          "sample": "Направил ответ на оспаривание"
+        },
+        {
+          "task_id": "446441",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446441/",
+          "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 3507307 Асанова Валентина Владимировна",
+          "hits": [
+            "official"
+          ],
+          "sample": "Направил ответ на оспаривания. Задачу закрываю"
+        },
+        {
+          "task_id": "446444",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446444/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 2798323 Шардаков Сергей Юрьевич",
+          "hits": [
+            "official"
+          ],
+          "sample": "Анатолий Аргунов прошу скинуть скриншот входящего письма с запросом по оспариванию"
+        },
+        {
+          "task_id": "447900",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/447900/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ Саммит 3202838 Мунтяну Лариса Георгиевна",
+          "hits": [
+            "bankrot",
+            "official",
+            "overdue"
+          ],
+          "sample": "3202838 - Мунтяну Лариса Георгиевна (ПД:4120144918) / (10226231) - 051 82 0 2309041921_04.09.2023_100000р. / a1643465-df4a-11d9-81e7-7a12a7e4531a-0 - МФК \"Саммит\" НБКИ - прекращен по банкротству, просрочки отображаются корректно Эквифакс - прекращен по банкротству, просрочки отображаются корректно ОКБ - прекращен по ба"
+        }
+      ],
+      "F_unclear": [
+        {
+          "task_id": "446384",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446384/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ Саммит 2798323 Шардаков Сергей Юрьевич",
+          "hits": [],
+          "sample": "Егор Парфинцов прошу скинуть скриншот входящего письма с запросом по оспариванию"
+        },
+        {
+          "task_id": "448777",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448777/",
+          "title": "ОСПАРИВАНИЕ НБКИ АО МФК \"САММИТ\" 3518353  Гашпаренко Павел Евгеньевич",
+          "hits": [],
+          "sample": "Отправил ответ в НБКИ"
+        },
+        {
+          "task_id": "449909",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/449909/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 431566 - Иксанов Родион Ренатович",
+          "hits": [],
+          "sample": "Отправил ответ в Эквифакс"
+        },
+        {
+          "task_id": "450339",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/450339/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 4653971 - Борсук Анатолий Александрович",
+          "hits": [],
+          "sample": "Отправил ответ в экви"
+        }
+      ],
+      "D_verify_ok_generic": [
+        {
+          "task_id": "446877",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446877/",
+          "title": "ОСПАРИВАНИЕ НБКИ Доброзайм 418509 Ерофеев Максим Вадимович",
+          "hits": [
+            "verify_ok"
+          ],
+          "sample": "Информация отображается корректно"
+        },
+        {
+          "task_id": "448378",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448378/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ ДЗБР 3666757  АРУТЮНЯН РОЗА РУБЕНОВНА",
+          "hits": [
+            "verify_ok"
+          ],
+          "sample": "Информация отображается корректно"
+        },
+        {
+          "task_id": "448687",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448687/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ Саммит 3752128  Фатюшина Дарья Олеговна",
+          "hits": [
+            "official",
+            "verify_ok"
+          ],
+          "sample": "Кредит активен, данные корректны, буду направлять ответ"
+        },
+        {
+          "task_id": "448908",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448908/",
+          "title": "ОСПАРИВАНИЕ ОКБ САММИТ 4812166 Романов Сергей Владимирович",
+          "hits": [
+            "verify_ok"
+          ],
+          "sample": "информация отображается корректно"
+        }
+      ],
+      "B_correction_upload": [
+        {
+          "task_id": "447270",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/447270/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 1350977 Саберова Сания Садековна",
+          "hits": [
+            "correction_upload",
+            "official",
+            "pko"
+          ],
+          "sample": "на основе заявок, уже договора закрытые. и ко всем есть подписанные анкеты и договора"
+        },
+        {
+          "task_id": "449614",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/449614/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ ПКО Доброзайм 3056965 - Колыбалова Наталья Сергеевна",
+          "hits": [
+            "correction_upload",
+            "official"
+          ],
+          "sample": "Направил корректировки НБКИ - 66506 ЭКВИ - 66507"
+        },
+        {
+          "task_id": "460453",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/460453/",
+          "title": "ОСПАРИВАНИЕ ОКБ МКК \"ДЗБР\"  5584930 - Трухляева Елена Александровна",
+          "hits": [
+            "correction_upload",
+            "official",
+            "overdue"
+          ],
+          "sample": "5584930 - Трухляева Елена Александровна (ПД:5819352121) / (14920686) - 88000р. / 8E6C72BE-B6E8-11DC-9C49-AD2060D6070C-d - МКК \"ДЗБР\" НБКИ - корректировка 70511 ОКБ - корректировка 70513"
+        },
+        {
+          "task_id": "464112",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/464112/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 4086159 Терзян Рузанна Ардавазтовна",
+          "hits": [
+            "correction_upload",
+            "official"
+          ],
+          "sample": "Корректировка ОКБ - 71340 Экви - 71339 НБКИ - 71338"
+        }
+      ],
+      "D_verify_ok_bankrot": [
+        {
+          "task_id": "447886",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/447886/",
+          "title": "ОСПАРИВАНИЕ  ЭКВИ Саммит 4614907  Тимофеева Виктория Валерьевна",
+          "hits": [
+            "bankrot",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "4614907 - Тимофеева Виктория Валерьевна (ПД:5811101978) / (11898766) - 003 06 5 2408180083_18.08.2024_28000р. / 1045c8d8-f1a1-11da-8b68-fba57dd3c660-8 - МФК \"Саммит\" НБКИ - прекращен по причине банкротства, просрочка отображается корректно Эквифакс - прекращен по причине банкротства, просрочка отображается корректно ОК"
+        },
+        {
+          "task_id": "453762",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/453762/",
+          "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 3710995 - Гаджиханов Фархад Салимхан Оглы",
+          "hits": [
+            "bankrot",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Кл стал банкротом 01.07.2025. Просрочка в БКИ и ПО отображается только до этого числа. Статус договора в БКИ отображается корректно - 16. Клиент признан банкротом, обязательства прекращены. Таким образом, вся информация отображается корректно, отправил ответ на оспаривание"
+        },
+        {
+          "task_id": "455449",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455449/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 3452820 Османов Марс Гарриевич",
+          "hits": [
+            "bankrot",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Кл признан банкротом 13.11.2024. Во всех БКИ дата последней записи о просрочке - 19.11.2023. При этом на 30.11.2023 во всех БКИ просрочки нет. Таким образом, информация о просрочке отображается корректно"
+        },
+        {
+          "task_id": "456060",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/456060/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 3911177 Уразбахтина Гульшат Олеговна",
+          "hits": [
+            "bankrot",
+            "closed",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Договор прекращен 27.07.2025 до этого числа в графике отображается просрочка, последний платеж был совершен 19.12.2024, следущий платеж по графику был 27.12.2024, просрочка начинает идти с этого числа. В БКИ информация отображается корректно: - МФК \"Саммит\" НБКИ - Клиент признан банкротом, обязательства прекращены, про"
+        }
+      ],
+      "D_verify_ok_overdue": [
+        {
+          "task_id": "448680",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448680/",
+          "title": "ОСПАРИВАНИЕ НБКИ АО МФК \"САММИТ\"\n5508450  Баулин Дмитрий Вадимович",
+          "hits": [
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Информация по заявке и кредиту отображается корректно: договор по заявке оформлен, договор открыт, есть просрочка. Отправляю ответ на оспаривание"
+        },
+        {
+          "task_id": "449315",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/449315/",
+          "title": "ОСПАРИВАНИЕ НБКИ ЦВ 1434339 - Кривоног Максим Сергеевич",
+          "hits": [
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Договор оформлен корректно. Информация по договору в БКИ отсутствует, отправляю массовую выгрузку: «Центр Взыскания» НБКИ - 66882"
+        },
+        {
+          "task_id": "450090",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/450090/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 3455575 - Попова Наталия Викторовна",
+          "hits": [
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Отправил ответ на оспаривания, информация относительно просрочек отображается корректно"
+        },
+        {
+          "task_id": "452292",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/452292/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 4439331 - Искужина Диля Ханнановна",
+          "hits": [
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Просрочка в ПО и БКИ отображается корректно, направил ответ на оспаривание"
+        }
+      ],
+      "A_db_change": [
+        {
+          "task_id": "449906",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/449906/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 337180 - Егорова Галина Павловна",
+          "hits": [
+            "ask",
+            "bankrot",
+            "official",
+            "po_field"
+          ],
+          "sample": "337180 - Егорова Галина Павловна (ПД:) / (665376) - 050 18 0 1606241129_24.06.2016_16000р. / 7dc694f8-ab9c-11d6-9152-136464b1b734-0 нет инфы, направляю массовую - МФК \"Саммит\" НБКИ - 66695 Эквифакс - 66696 ОКБ - 66697"
+        },
+        {
+          "task_id": "459828",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459828/",
+          "title": "ОСПАРИВАНИЕ ОКБ ДЗБР 5218071 - Зайцев Михаил Александрович",
+          "hits": [
+            "bankrot",
+            "official",
+            "po_field",
+            "verify_ok"
+          ],
+          "sample": "Прекращения или продажи по договору не было, процедур банкротства в таблице Bankrot нет. Договор был выдан 24.03.2026, досрочного погашения не было, был только 1 досрочно оплаченный платеж 10.04.2026. В БКИ информация по статусу и платежу отображается корректно. Направил ответ на оспаривание"
+        },
+        {
+          "task_id": "467323",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/467323/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 4555782 - Мавлютов Артур Ильгизович",
+          "hits": [
+            "ask",
+            "bankrot",
+            "fio",
+            "interim",
+            "official",
+            "overdue",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "Процедура банкротстсва у клиента еще не завершена, у него реструктуризация, но с 25.03.2025 должны быть приостановлены начисления в связи с банкротством, однако в ПО отображается просрочка после этого числа"
+        },
+        {
+          "task_id": "479569",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/479569/",
+          "title": "ОСПАРИВАНИЕ  НБКИ   МКК ДЗБР  1324508 - Мелихова Мария Сергеевна",
+          "hits": [
+            "address",
+            "correction_upload",
+            "fio",
+            "interim",
+            "passport",
+            "po_field"
+          ],
+          "sample": "Николай Шишкин , почему должен быть 99 код? У нас была продажа из ДЗБР в ЦВ, из ЦВ в АйДи Коллект. Выгрузки направлялись ?"
+        }
+      ],
+      "E_process_interim": [
+        {
+          "task_id": "449919",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/449919/",
+          "title": "ОСПАРИВАНИЕ ОКБ САММИТ 3202392 - Афанасьева София Сергеевна",
+          "hits": [
+            "interim",
+            "official"
+          ],
+          "sample": "Направил промежуточный ответ"
+        },
+        {
+          "task_id": "462208",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/462208/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 2425468 Рассохин Сергей Леонидович",
+          "hits": [
+            "bankrot",
+            "interim",
+            "official",
+            "overdue"
+          ],
+          "sample": "Андрей Шевцов, от 30.03.2024 задолженность по договору по была подтверждена судебным приказом. Судебный приказ зафиксировал по клиенту суммы задолженности и более нами не проводилось новых начислений. От 23.12.2023 в отношении клиента было признано обоснованным заявление о признании гражданина банкротом и введена проце"
+        },
+        {
+          "task_id": "469637",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/469637/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 157758 Семененко Сергей Геннадьевич",
+          "hits": [
+            "interim",
+            "official"
+          ],
+          "sample": "Анастасия Абдурахманова , корректно. 11 код основания прекращения отвечает за прощение долга. В 56 блоке также указано прекращение. Готовь ответ"
+        },
+        {
+          "task_id": "470023",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470023/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 1446531 - Шевелева Любовь Викторовна",
+          "hits": [
+            "bankrot",
+            "interim",
+            "official",
+            "overdue"
+          ],
+          "sample": "Рустам Карабалаев, добавь задачу разработки в связанные и отпиши комментарий, почему сейчас не ведутся работы, чтобы зафиксировать"
+        }
+      ],
+      "D_verify_ok_closed": [
+        {
+          "task_id": "451325",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/451325/",
+          "title": "ОСПАРИВАНИЕ ОКБ САММИТ 5258215 Фардиев Искандер Фанилович",
+          "hits": [
+            "closed",
+            "official",
+            "verify_ok"
+          ],
+          "sample": "В ПО договор отображается как закрытый. В БКИ отображается корректная информация: 5258215 - Фардиев Искандер Фанилович (ПД:4523352914) / (14736097) - 30000р. / 131D55E4-A4D1-11DC-82B1-29F5003163DC-8 - МФК \"Саммит\" НБКИ - договор закрыт Эквифакс - договор закрыт ОКБ - договор закрыт"
+        },
+        {
+          "task_id": "453735",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/453735/",
+          "title": "ОСПАРИВАНИЕ Эквифакс - МФК \"Саммит\" 1971448 - Щеколдин Владимир Валерь",
+          "hits": [
+            "closed",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Информация в БКИ и ПО отображается корректно. Договор закрыт с просрочкой"
+        },
+        {
+          "task_id": "454825",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/454825/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 4649018 Белокопытов Максим Алексеевич",
+          "hits": [
+            "closed",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Информация по договору отображается корректно. Договор закрыт с просрочкой 26.09.2025. Отправляю ответ в ОКБ"
+        },
+        {
+          "task_id": "457599",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457599/",
+          "title": "ОСПАРИВАНИЕ Эквифакс - МФК \"Саммит\" 2416429 - Дорош Артём Вячеславович",
+          "hits": [
+            "closed",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Договор был закрыт 19.02.2022, просрочка отображается с 31.08.2021 В БКИ просрочка отображается до 19.02.2022, дата возникновения просроченной задолженности 31.08.2021 Просрочка в БКИ отображается корректно"
+        }
+      ],
+      "B_correction_then_ok": [
+        {
+          "task_id": "452286",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/452286/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 312743 - Сутбаев Ильжан Ислямгалиевич",
+          "hits": [
+            "correction_upload",
+            "official",
+            "passport",
+            "verify_ok"
+          ],
+          "sample": "Паспортные данные кл отображаются корректно, договор подписан. В НБКИ и Эквифаксе информация о продаже договора отображается корректно, в ОКБ информация отсутствует, отправляю массовую: - МФК \"Саммит\" ОКБ - массовая 67664"
+        },
+        {
+          "task_id": "454061",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/454061/",
+          "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 1436258 - Докучалов Александр Викторович",
+          "hits": [
+            "correction_upload",
+            "official",
+            "verify_ok"
+          ],
+          "sample": "Информация в БКИ о договоре отсутствует, направил массовые выгрузки НБКИ - 68564 ОКБ - 68566 ЭКВИ - 68565"
+        },
+        {
+          "task_id": "455935",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455935/",
+          "title": "ОСПАРИВАНИЕ Экви Саммит 3101648 Алиева Анна Ивановна",
+          "hits": [
+            "bankrot",
+            "correction_upload",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Договор был прекращен 24.01.2026 по причине \"Банкротство субъекта кредитной истории\". Последний платеж был совершен 20.06.2023, данные о просрочке во всех БКИ отображаются корректно, данные о прекращении отображаются некорректно в НБКИ и Эквифакс. Отправил корректировки: - МФК \"Саммит\" НБКИ - корректировка 69216 Эквифа"
+        },
+        {
+          "task_id": "455970",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455970/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 4312634 Коваленко Софья Дмитриевна",
+          "hits": [
+            "closed",
+            "correction_upload",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "Договор прекращен 25.10.2024, с 13.04.2024 до 31.08.2024 отображается просрочка. Информация в ОКБ отображается корректно, в НБКИ и Экви есть просрочка за 30.09.2024, отправил корректировки: - МФК \"Саммит\" НБКИ - 68892 Эквифакс - 68891"
+        }
+      ],
+      "D_verify_ok_pko": [
+        {
+          "task_id": "457072",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457072/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 3167565 Лагерев Данил Юрьевич",
+          "hits": [
+            "official",
+            "pko",
+            "verify_ok"
+          ],
+          "sample": "35dc6812-832a-11d9-93a8-ce8d0a9e4996-6 - продажа в ПКО ЦДУ 3640fb4d-006b-11d9-9be8-c8713b12ad66-6 - Код основания прекращения обязательства 1 3640fb88-006b-11d9-949f-f9f14021496b-6 - Код основания прекращения обязательства 1 информация по займам отображается корректно"
+        },
+        {
+          "task_id": "460718",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/460718/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 2425468 - Рассохин Сергей Леонидович",
+          "hits": [
+            "closed",
+            "pko",
+            "verify_ok"
+          ],
+          "sample": "договор прекращен, продажа в ООО ПКО «АЙВА» от 16.12.2024. информация в БКИ отображается корректно"
+        },
+        {
+          "task_id": "465929",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465929/",
+          "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 3817220 - Толстой Антон Владимирович",
+          "hits": [
+            "official",
+            "pko",
+            "verify_ok"
+          ],
+          "sample": "Договор был продан 22.12.2023 в АО ПКО \"ЦДУ\" В БКИ информация о продаже отображается корректно МФК \"Саммит\" НБКИ - Права кредитора по обязательству перешли к другому лицу АО \"ЦДУ\" от 22.12.2023 Эквифакс - Права кредитора по обязательству перешли к другому лицу АО \"ЦДУ\" от 22.12.2023 ОКБ - Права кредитора по обязательст"
+        },
+        {
+          "task_id": "468134",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468134/",
+          "title": "ОСПАРИВАНИЕ ОКБ - МФК \"Саммит\" 4812532 - Дудкин Павел Сергеевич",
+          "hits": [
+            "overdue",
+            "pko",
+            "verify_ok"
+          ],
+          "sample": "Ангелина Апухтина Даниил Переверзев по договору не поступало ни одного платежа. Поэтому создалась просрочка. После этого договор был передан «ПКО ВОКСИС»"
+        }
+      ]
+    }
+  },
+  "ТЧ": {
+    "n": 258,
+    "buckets": {
+      "B_correction_upload": 110,
+      "E_process_reply_only": 39,
+      "B_correction_then_ok": 18,
+      "E_process_interim": 18,
+      "F_unclear": 15,
+      "D_verify_ok_no_change": 11,
+      "A_db_change:passport": 9,
+      "A_db_change:other": 7,
+      "A_db_change:address": 5,
+      "D_no_fix_needed": 4,
+      "A_db_change:passport+address": 4,
+      "A_db_change:fio": 3,
+      "A_db_change:passport+fio": 3,
+      "C_already_fixed_elsewhere": 2,
+      "A_db_change:passport+birth": 2,
+      "A_db_change:address+birth": 2,
+      "A_db_change:passport+address+birth": 2,
+      "A_db_change:birth": 1,
+      "A_db_change:passport+address+fio+birth": 1,
+      "A_db_change:passport+fio+birth": 1,
+      "A_db_change:passport+address+fio": 1
+    },
+    "samples": {
+      "E_process_reply_only": [
+        {
+          "task_id": "444648",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/444648/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ МФК Саммит 3459340 Савосина Анастасия Александровна",
+          "hits": [
+            "official"
+          ],
+          "sample": "WD01BB000002_20260226_160533 0OA_FCH_20260226_0026 CHP_01465_EFK_04-10_20260226160533100"
+        },
+        {
+          "task_id": "451381",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/451381/",
+          "title": "ОСПАРИВАНИЕ ОКБ САММИТ 3906500 - Лерке Александр Викторович",
+          "hits": [
+            "official",
+            "passport"
+          ],
+          "sample": "паспорт исправлять не надо, так как фото нового паспорта у нас в по нет ответ направил"
+        },
+        {
+          "task_id": "455193",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455193/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 2397227 Фомин Сергей Андреевич",
+          "hits": [
+            "official",
+            "passport"
+          ],
+          "sample": "Андрей Шевцов проверил через сайт федеральной налоговой службы все паспорта клиента, судя по всему паспорт 4502 786513 корректный и просто является предыдущим паспортом клиента. Не уверен почему он его оспаривает. ИНН через сайт выбивает одинаковый как для текущего паспорта, так и для указанных предыдущих, что говорит "
+        },
+        {
+          "task_id": "455194",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455194/",
+          "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 2397227 Фомин Сергей Андреевич",
+          "hits": [
+            "official"
+          ],
+          "sample": "отправил ответ на оспаривание"
+        }
+      ],
+      "D_verify_ok_no_change": [
+        {
+          "task_id": "446005",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446005/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 3403133 Батуева Мэдэгма Сергеевна",
+          "hits": [
+            "official",
+            "verify_ok"
+          ],
+          "sample": "Информация по клиенту отображается корректно. Отправляю ответ на оспаривание"
+        },
+        {
+          "task_id": "446404",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446404/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 2880830 Лупеева Юлия Александровна",
+          "hits": [
+            "interim",
+            "official",
+            "verify_ok"
+          ],
+          "sample": "Информация относительно платежей отображается корректно"
+        },
+        {
+          "task_id": "451834",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/451834/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 1122106 Алмамбетова Наргиза Муратбековна",
+          "hits": [
+            "interim",
+            "official",
+            "verify_ok"
+          ],
+          "sample": "Удалили из ОКБ инфо о клиенте, т.к заявка очень старая, на то время мы не передавали информацию в ОКБ"
+        },
+        {
+          "task_id": "455621",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455621/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 961251 Арнаутов Сергей Васильевич",
+          "hits": [
+            "address",
+            "interim",
+            "official",
+            "passport",
+            "verify_ok"
+          ],
+          "sample": "Сверил адрес прописки кл в ПО и в приложенном паспорте из письма. Заявки кл были оформлены до изменения адреса прописки, т е у нас на момент подачи заявок информация отображается корректно. Направил уточняющее письмо в НБКИ"
+        }
+      ],
+      "D_no_fix_needed": [
+        {
+          "task_id": "446387",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446387/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ Саммит 857825 Сальников Алексей Михайлович",
+          "hits": [
+            "correction_upload",
+            "no_fix_needed",
+            "official",
+            "passport"
+          ],
+          "sample": "эквифакс подтвердил обработку корректировочного файла"
+        },
+        {
+          "task_id": "465945",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465945/",
+          "title": "ОСПАРИВАНИЕ НБКИ МКК \"ДЗБР\" 4970730 - Смирнов Елисей Александрович",
+          "hits": [
+            "correction_upload",
+            "fio",
+            "no_fix_needed",
+            "official",
+            "passport"
+          ],
+          "sample": "оспариваемый паспорт 9923 149042 судя по всему действительно не принадлежит нашему клиенту, если выполнять проверку через поиск ИНН на сайте налоговой службы, удалю из БКИ"
+        },
+        {
+          "task_id": "488277",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/488277/",
+          "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 2494900 Ахатов Артур Рифакович",
+          "hits": [
+            "address",
+            "birth",
+            "correction_upload",
+            "no_fix_needed",
+            "passport",
+            "refuse_dispute"
+          ],
+          "sample": "информацию относительно адреса регистрации не нужно корректировать, у нас в анкете и у клиента в паспорте указан такой же адрес"
+        },
+        {
+          "task_id": "488431",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/488431/",
+          "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 2494900 - Ахатов Артур Рифакович",
+          "hits": [
+            "address",
+            "bankrot",
+            "birth",
+            "correction_upload",
+            "no_fix_needed",
+            "official",
+            "passport"
+          ],
+          "sample": "Во всех БКИ код 16, мошенничества нет, паспорт сходится, анкеты и договор подписаны"
+        }
+      ],
+      "B_correction_upload": [
+        {
+          "task_id": "446399",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446399/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 3403133  Батуева Мэдэгма Сергеевна",
+          "hits": [
+            "correction_upload",
+            "fio",
+            "interim",
+            "official"
+          ],
+          "sample": "66237 66238 66239"
+        },
+        {
+          "task_id": "446432",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446432/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 2964709 Михайлов Дмитрий Андреевич",
+          "hits": [
+            "correction_upload",
+            "interim",
+            "official"
+          ],
+          "sample": "dm6official@icloud.com"
+        },
+        {
+          "task_id": "446864",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446864/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 3148852 Злобин Андрей Петрович",
+          "hits": [
+            "correction_upload",
+            "official"
+          ],
+          "sample": "номер корректировать не нужно, так как он был указан при оформлении займа и на него приходили коды АСП, ответ направлен"
+        },
+        {
+          "task_id": "448889",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448889/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 2345005 Шустова Юлия Сергеевна",
+          "hits": [
+            "correction_upload",
+            "official"
+          ],
+          "sample": "направлял корректировочный файл, сегодня проверил, НБКИ все приняли, ответ направил"
+        }
+      ],
+      "C_already_fixed_elsewhere": [
+        {
+          "task_id": "448794",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/448794/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ ДЗБР 5528348 БАРАНОВ МИХАИЛ ВЛАДИМИРОВИЧ",
+          "hits": [
+            "correction_upload",
+            "linked_fixed",
+            "official",
+            "passport"
+          ],
+          "sample": "корректировка паспорта уже была проведена в рамках связанных задач, направил ответ на оспаривание"
+        },
+        {
+          "task_id": "475920",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/475920/",
+          "title": "ОСПАРИВАНИЕ Экви ПКО Доброзайм 2990253 Артёмова Мария Юрьевна",
+          "hits": [
+            "fio",
+            "linked_fixed"
+          ],
+          "sample": "на сколько вижу, судя по всему, фамилия клиента уже была исправлена в одной из связанных задач, т.к. на текущий момент данные в титульной части корректные, а исправлены они выгрузкой от 23 июня"
+        }
+      ],
+      "A_db_change:address": [
+        {
+          "task_id": "450075",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/450075/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 4214598 - Васильев Владимир Владимирович",
+          "hits": [
+            "address",
+            "official",
+            "sql"
+          ],
+          "sample": "обновил адресс UPDATE P SET P.[Электронная почта] = 'wega820@mail.ru' FROM dbo.Partner AS P WHERE 1 = 1 AND P.keyPart = 4214598"
+        },
+        {
+          "task_id": "453184",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/453184/",
+          "title": "ОСПАРИВАНИЕ НБКИ МКК \"ДЗБР\" 4093016 - Терехова Дарья Александровна",
+          "hits": [
+            "address",
+            "correction_upload",
+            "official",
+            "sql"
+          ],
+          "sample": "Отправил корректировки на удаление почты во все БКИ"
+        },
+        {
+          "task_id": "470384",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470384/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 1024819 - Дорджиева Эльза Петровна",
+          "hits": [
+            "address",
+            "correction_upload",
+            "interim",
+            "official",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "информация о заявках клиента во всех БКИ отсутствует"
+        },
+        {
+          "task_id": "472857",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472857/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 5565886 Арзуманян Альберт Микаелович",
+          "hits": [
+            "address",
+            "correction_upload",
+            "official",
+            "sql"
+          ],
+          "sample": "Номер корректировать не требуется, так как на него приходил код асп для подписания договора SELECT TOP 100 * FROM ProtocolDB.dbo.RassilkaLog1_Arc AS RLA WHERE 1 = 1 AND RLA.keyPart = 5565886 ORDER BY 1 DESC"
+        }
+      ],
+      "A_db_change:other": [
+        {
+          "task_id": "451318",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/451318/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 4069391 - Сорокина Алина Игоревна",
+          "hits": [
+            "interim",
+            "official",
+            "sql"
+          ],
+          "sample": "UPDATE P SET P.[Электронная почта] = 'sorokin.a.lina@yandex.ru' --SELECT TOP 100 P.[Электронная почта],* FROM dbo.Partner AS P WHERE 1 = 1 AND P.keyPart = 4069391"
+        },
+        {
+          "task_id": "458928",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458928/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 3170981 Букатов Герман Юрьевич",
+          "hits": [
+            "official",
+            "po_field"
+          ],
+          "sample": "Посмотрел в файлах, какие телефонные номера клиент указывал при оформлении договоров. Указанный номер был указан в анкетах ко всем заявкам клиента. Также в таблице RassilkaLog1_Arc, есть сообщения с кодом АСП на этот номер. Таким образом, номер указан корректно, отправил ответ на оспаривание"
+        },
+        {
+          "task_id": "461208",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/461208/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 1978254 - Хакимов Адель Рустэмович",
+          "hits": [
+            "correction_upload",
+            "interim",
+            "sql"
+          ],
+          "sample": "Необходимо заменить почту на предоставленную в запросе"
+        },
+        {
+          "task_id": "468862",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468862/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 5432816 Попов Александр Владимирович",
+          "hits": [
+            "official",
+            "sql"
+          ],
+          "sample": "7407 646099 7401 211080 2520 867321 2514 987552 2507 971188 2503 591702"
+        }
+      ],
+      "B_correction_then_ok": [
+        {
+          "task_id": "452278",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/452278/",
+          "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 4883969 - Гладышева Анна Александровна",
+          "hits": [
+            "correction_upload",
+            "official",
+            "verify_ok"
+          ],
+          "sample": "переотправляю массовые, т.к были отосланы не от той организации"
+        },
+        {
+          "task_id": "452988",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/452988/",
+          "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 1001840 - Заманова Альвана Нураддиновна",
+          "hits": [
+            "correction_upload",
+            "official",
+            "verify_ok"
+          ],
+          "sample": "В ПО все отображается правильно, корректировка не требуется. Написал письмо в НБКИ с просьбой подтвердить корректность информации по клиенту. Жду ответа"
+        },
+        {
+          "task_id": "459401",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459401/",
+          "title": "ОСПАРИВАНИЕ ОКБ ПКО Доброзайм 4943804 Иванова Анна Сергеевна",
+          "hits": [
+            "correction_upload",
+            "pko",
+            "verify_ok"
+          ],
+          "sample": "корректировка была выполнена ранее, задачу закрываю"
+        },
+        {
+          "task_id": "460996",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/460996/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 5403080 - Косинов Артём Александрович",
+          "hits": [
+            "address",
+            "correction_upload",
+            "interim",
+            "official",
+            "overdue",
+            "verify_ok"
+          ],
+          "sample": "В БКИ информация по договору отображается корректно, сведения о просрочках верны. Данные о передаче прав отображаются правильно."
+        }
+      ],
+      "E_process_interim": [
+        {
+          "task_id": "454108",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/454108/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 4950362 - Антуганова Екатерина Геннадьевна",
+          "hits": [
+            "ask",
+            "birth",
+            "interim"
+          ],
+          "sample": "В какой выгрузке отправлялось некорректное место рождение я не нашла, в таблицах зафиксированы только МКК Направила массовые НБКИ - 68586 ЭКВИ - 68587 ОКБ - 68588"
+        },
+        {
+          "task_id": "457093",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457093/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 4653633 Овчинников Владимир Владимирович",
+          "hits": [
+            "interim",
+            "official",
+            "passport"
+          ],
+          "sample": "промежуточный ответ"
+        },
+        {
+          "task_id": "457666",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457666/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 1996625 Мещерякова Юлия Сергеевна",
+          "hits": [
+            "interim",
+            "official"
+          ],
+          "sample": "прошлые были с ошибками, направил по новой, без ошибок"
+        },
+        {
+          "task_id": "458369",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458369/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 4549575 Прокошина Елена Сергеевна",
+          "hits": [
+            "ask",
+            "interim",
+            "official",
+            "refuse_dispute"
+          ],
+          "sample": "У клиента всего 1 заявка, в которой указан отказ по мошенничеству. Направил исключения: - МФК \"Саммит\" НБКИ - исключение 70263 Эквифакс - исключение 70264 ОКБ - исключение 70265"
+        }
+      ],
+      "A_db_change:passport": [
+        {
+          "task_id": "454886",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/454886/",
+          "title": "ОСПАРИВАНИЕ Экви ДЗБР 3828487 Карлышева Вера Викторовна",
+          "hits": [
+            "correction_upload",
+            "official",
+            "passport",
+            "sql"
+          ],
+          "sample": "склейка произошла из-за того что у нас у нас есть ещё один клиент, 2557773, у которого в пред. паспортах есть текущий паспорт Карлышевой В. В. - 4715 503702 2557773 - Изотова Анастасия Александровна 3828487 - Карлышева Вера Викторовна"
+        },
+        {
+          "task_id": "456080",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/456080/",
+          "title": "ОСПАРИВАНИЕ Экви ДЗБР 5464169 Никонов Сергей Александрович",
+          "hits": [
+            "correction_upload",
+            "official",
+            "passport",
+            "po_field",
+            "refuse_dispute",
+            "sql"
+          ],
+          "sample": "склейка возникла из-за паспорта 5020 060367, он принадлежит другому человеку судя по проверке через сайт ФНС"
+        },
+        {
+          "task_id": "461776",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/461776/",
+          "title": "ОСПАРИВАНИЕ Экви МКК ДЗБР 4684944 Черниговцев Александр Алексеевич",
+          "hits": [
+            "correction_upload",
+            "interim",
+            "official",
+            "passport",
+            "po_field",
+            "sql"
+          ],
+          "sample": "Паспорт и ИНН скорректированы в задаче https://resultforyou.ru/workgroups/group/437/tasks/task/view/460723/"
+        },
+        {
+          "task_id": "468019",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468019/",
+          "title": "ОСПАРИВАНИЕ Экви Саммит 5676258 Крафт Яна Александровна",
+          "hits": [
+            "correction_upload",
+            "official",
+            "passport",
+            "sql"
+          ],
+          "sample": "--DELETE POP SELECT TOP 100 dbo.f_DC(POP.PS,'',1),dbo.f_DC(POP.PN,'',1),* FROM dbo.Partner_OldPasp AS POP WHERE 1 = 1 AND POP.keyPart = 5676258 ORDER BY 1 DESC"
+        }
+      ],
+      "A_db_change:birth": [
+        {
+          "task_id": "459349",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459349/",
+          "title": "ОСПАРИВАНИЕ НБКИ МФК САММИТ 4279363  Думитраш Адриан Борисович",
+          "hits": [
+            "birth",
+            "correction_upload",
+            "interim",
+            "official",
+            "overdue",
+            "po_field"
+          ],
+          "sample": "Ангелина Апухтина Тихон Русин не уверен что тут только запрос"
+        }
+      ],
+      "A_db_change:fio": [
+        {
+          "task_id": "459396",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459396/",
+          "title": "ОСПАРИВАНИЕ ОКБ ПКО Доброзайм 3082883 Орлов Евгений Олегович",
+          "hits": [
+            "ask",
+            "correction_upload",
+            "fio",
+            "linked_fixed",
+            "overdue",
+            "pko",
+            "po_field",
+            "verify_ok"
+          ],
+          "sample": "закачали серты для подписи и шифра от пко для окб, но почему-то пишет что сертификат уже истек, направляю пока корректировки в другие бюро"
+        },
+        {
+          "task_id": "474103",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/474103/",
+          "title": "ОСПАРИВАНИЕ ОКБ Саммит 2990253 Артёмова Мария Юрьевна",
+          "hits": [
+            "closed",
+            "correction_upload",
+            "fio",
+            "official",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "НБКИ - Сумма платежа на дату закрытия = 0, остальные платежи > 0"
+        },
+        {
+          "task_id": "474108",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/474108/",
+          "title": "ОСПАРИВАНИЕ ОКБ ПКО Доброзайм 2990253 Артёмова Мария Юрьевна",
+          "hits": [
+            "ask",
+            "bankrot",
+            "correction_upload",
+            "fio",
+            "official",
+            "pko",
+            "po_field",
+            "verify_ok"
+          ],
+          "sample": "Процедура банкротства была завершена после продажи - 18.03.2026: ``` SELECT b.DatEndR FROM Bankrot b WHERE b.keyPart = 2990253 ```"
+        }
+      ],
+      "A_db_change:passport+birth": [
+        {
+          "task_id": "460044",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/460044/",
+          "title": "ОСПАРИВАНИЕ ЭКВИ САММИТ 2323532 - Мухетдинов Ильназ Внерович",
+          "hits": [
+            "birth",
+            "correction_upload",
+            "interim",
+            "official",
+            "passport",
+            "po_field",
+            "verify_ok"
+          ],
+          "sample": "КЛ оспаривает дату выдачи паспорта. Клиент приводит данные: верная дата выдачи паспорта 14.07.2016. В запросе обозначена дата выдачи 14.07.2020. Клиент 1996 года рождения. На приведенную дату ему было 20. Паспорт он получил на двадцатилетие. Информация отображается корректно. В ПО дата выдачи паспорта 14.07.2016. В БКИ"
+        },
+        {
+          "task_id": "482396",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482396/",
+          "title": "ОСПАРИВАНИЕ  ОКБ    МКК \"ДЗБР\"   5705460 - Вагапова Гульсия Минисламов",
+          "hits": [
+            "birth",
+            "correction_upload",
+            "official",
+            "passport",
+            "refuse_dispute",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "В запросе КИ отображается место рождения С. КУТУШ МЕЛЕУЗОВСКОГО РАЙОНА РЕСП. БАШКОРТОСТАН"
+        }
+      ],
+      "A_db_change:passport+address+fio+birth": [
+        {
+          "task_id": "461980",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/461980/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 670965 Комов Максим Юрьевич",
+          "hits": [
+            "address",
+            "ask",
+            "birth",
+            "correction_upload",
+            "fio",
+            "interim",
+            "official",
+            "passport",
+            "po_field",
+            "sql"
+          ],
+          "sample": "Клиенту необходимо скорректировать некорректный адрес регистрации и фактический адрес, сформировал массовые с некорректными данными: МФК Саммит - НБКИ - массовая 71136 - Экви - массовая 71137 - ОКБ - массовая 71138"
+        }
+      ],
+      "F_unclear": [
+        {
+          "task_id": "462198",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/462198/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 777462 Епифанцева Инна Владимировна",
+          "hits": [],
+          "sample": "[файл] 7297295"
+        },
+        {
+          "task_id": "465981",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465981/",
+          "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 2559141 - Куулар Айлан Геннадьевна",
+          "hits": [
+            "address"
+          ],
+          "sample": "Николай Шишкин , подскажи, что ты пытаешься исправить выгрузками? У тебя во всех трех выгрузках некорректная шапка. Если они и были направлены, то 100% не принялись. В ОКБ на данный момент информация относительно адресов корректна"
+        },
+        {
+          "task_id": "469611",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/469611/",
+          "title": "ОСПАРИВАНИЕ НБКИ САММИТ 3044947 Ласовский Адам Дмитриевич",
+          "hits": [],
+          "sample": "Дубль: https://resultforyou.ru/company/personal/user/1113923/tasks/task/view/469595/"
+        },
+        {
+          "task_id": "470676",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470676/",
+          "title": "ОСПАРИВАНИЕ НБКИ \"САММИТ\" 4874751 Ромашов Артем Андреевич",
+          "hits": [],
+          "sample": "https://resultforyou.ru/company/personal/user/1113923/tasks/task/view/470418/"
+        }
+      ],
+      "A_db_change:passport+address": [
+        {
+          "task_id": "468856",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468856/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 2628027 Стрекаловская Сахамира Михайловна",
+          "hits": [
+            "address",
+            "correction_upload",
+            "interim",
+            "official",
+            "passport",
+            "sql"
+          ],
+          "sample": "Телефон корректировать не требуется, так как использовался для выдачи займа SELECT TOP 100 * FROM ProtocolDB.dbo.RassilkaLog1_Arc AS RLA WHERE 1 = 1 AND RLA.keyPart = 2628027 ORDER BY 1 DESC"
+        },
+        {
+          "task_id": "469754",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/469754/",
+          "title": "ОСПАРИВАНИЕ ЭВКИ САММИТ 4593195 - Амбарцумян Оксана Ваниковна",
+          "hits": [
+            "address",
+            "ask",
+            "official",
+            "passport",
+            "sql"
+          ],
+          "sample": "DELETE pop SELECT TOP 100 dbo.f_DC(POP.PS,'',1),dbo.f_DC(POP.PN,'',1),* FROM dbo.Partner_OldPasp AS POP WHERE 1 = 1 AND POP.keyPart = 4593195 AND POP.keyOldPasp IN (907911, 907910, 907909) ORDER BY 1 DESC"
+        },
+        {
+          "task_id": "475459",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/475459/",
+          "title": "ОСПАРИВАНИЕ ОКБ МКК \"ДЗБР\" 6005535 - Телкова Ксения Ивановна",
+          "hits": [
+            "address",
+            "correction_upload",
+            "interim",
+            "official",
+            "passport",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "В ПО файл с паспортом отсутствует и отображается информация без квартиры"
+        },
+        {
+          "task_id": "478758",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/478758/",
+          "title": "ОСПАРИВАНИЕ  НБКИ   Саммит 367604 - Овчарова Татьяна Сергеевна",
+          "hits": [
+            "address",
+            "correction_upload",
+            "interim",
+            "official",
+            "passport",
+            "sql"
+          ],
+          "sample": "Кл просит скорректировать орган выдачи на \"МО УФМС РОССИИ ПО РОСТОВСКОЙ ОБЛАСТИ В ПОС ЧЕРТКОВО\""
+        }
+      ],
+      "A_db_change:address+birth": [
+        {
+          "task_id": "472758",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472758/",
+          "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 3942944 - Пелевин Иван Александрович",
+          "hits": [
+            "address",
+            "birth",
+            "correction_upload",
+            "interim",
+            "official",
+            "po_field",
+            "verify_ok"
+          ],
+          "sample": "направил выгрузки по корректировкам место рождения"
+        },
+        {
+          "task_id": "482984",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482984/",
+          "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит 4074414 - Монгуш Омадак Шолбановна",
+          "hits": [
+            "address",
+            "birth",
+            "correction_upload",
+            "interim",
+            "official",
+            "sql"
+          ],
+          "sample": "скорректировала адрес в ПО UPDATE p SET p.[Место рождения] = 'С.ЧЫРГАКЫ ДЗУН-ХЕМЧИКСКОГО Р-НА РЕСПУБЛИКИ ТЫВА' --SELECT TOP 100 p.[Место рождения], p.* FROM Partner p WHERE p.keyPart = 4074414 UPDATE ped SET ped.PlaceB = 'С.ЧЫРГАКЫ ДЗУН-ХЕМЧИКСКОГО Р-НА РЕСПУБЛИКИ ТЫВА' --SELECT TOP 100 * FROM Partner_Edit_Documents pe"
+        }
+      ],
+      "A_db_change:passport+fio+birth": [
+        {
+          "task_id": "472873",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472873/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 1200474 Цаплина Евгения Сергеевна",
+          "hits": [
+            "birth",
+            "correction_upload",
+            "fio",
+            "interim",
+            "passport",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "Если смотреть в По: место рождения подтверждено паспортом на который оформлялся договор займа. Это текущий паспорт субъекта указанный в оспаривании В оспаривании от бюро приведена строчка гор.Кумертау БАССР но в приложении от субъекта место рождения указано просто как КУМЕРТАУ (сами бки место рождения не показывают) Ст"
+        }
+      ],
+      "A_db_change:passport+address+birth": [
+        {
+          "task_id": "473966",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/473966/",
+          "title": "ОСПАРИВАНИЕ НБКИ Саммит 4040105 Наумов Кирилл Олегович",
+          "hits": [
+            "address",
+            "birth",
+            "correction_upload",
+            "official",
+            "passport",
+            "po_field",
+            "refuse_dispute",
+            "sql"
+          ],
+          "sample": "В ПО информация отображается верно кроме сокращения города и области"
+        },
+        {
+          "task_id": "476298",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/476298/",
+          "title": "ОСПАРИВАНИЕ ОКБ  МФК \"Саммит\" 3657617 - Донгак Анжелика Опей-Ооловна",
+          "hits": [
+            "address",
+            "birth",
+            "correction_upload",
+            "interim",
+            "official",
+            "passport",
+            "po_field",
+            "sql"
+          ],
+          "sample": "В последней выгрузке в ОБК передавалось место рождения как в ПО"
+        }
+      ],
+      "A_db_change:passport+fio": [
+        {
+          "task_id": "475063",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/475063/",
+          "title": "ОСПАРИВАНИЕ Экви МКК ДЗБР 5701509 Бадмаева Раджана Сергеевна",
+          "hits": [
+            "ask",
+            "correction_upload",
+            "fio",
+            "interim",
+            "official",
+            "passport",
+            "refuse_dispute",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "Нашел информацию по этим заявкам: 5460169 - Бадмаев Сергей Григорьевич (ПД:8114582001) / (14136780) - 819 43 5 2511191380_19.11.2025_11000р. / abeeed4a-59df-11dc-9791-c0b1f46bfc84-b 5460169 - Бадмаев Сергей Григорьевич (ПД:8114582001) / (14723292) - ЗА-14723292_21.02.2026_12000р. / e30d123c-a480-11dc-9a86-373a4c702f39-"
+        },
+        {
+          "task_id": "482986",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482986/",
+          "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит  5888155 - Баглат Азиата Белекооловна",
+          "hits": [
+            "correction_upload",
+            "fio",
+            "interim",
+            "linked_fixed",
+            "official",
+            "passport",
+            "sql"
+          ],
+          "sample": "------------------------------------------------------ Егор Парфинцов [сегодня, 14:20] #chat2573897/175644267 оспаривает фамилию ------------------------------------------------------ Егор Парфинцов отчество"
+        },
+        {
+          "task_id": "491154",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/491154/",
+          "title": "ОСПАРИВАНИЕ НБКИ МКК \"ДЗБР\" 5196023 - Ичмелян Ерванд Эдуартович",
+          "hits": [
+            "correction_upload",
+            "fio",
+            "official",
+            "passport",
+            "sql",
+            "verify_ok"
+          ],
+          "sample": "Оспаривается пред. фио и отсутствие органа выдачи у текущ. пасп 0319 ***"
+        }
+      ],
+      "A_db_change:passport+address+fio": [
+        {
+          "task_id": "486767",
+          "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/486767/",
+          "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит  4170894 - Норбужук Байлак Алексеевна",
+          "hits": [
+            "address",
+            "ask",
+            "correction_upload",
+            "fio",
+            "interim",
+            "official",
+            "passport",
+            "po_field",
+            "verify_ok"
+          ],
+          "sample": "Алина Камышникова неправильно теги поставили, тут ТЧ, просьба взять в работу"
+        }
+      ]
+    }
+  }
+}

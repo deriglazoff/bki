@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "case_type": "ОЧ",
+  "rules": [
+    {
+      "id": "R1",
+      "when": "po_not_found",
+      "action": "escalate_human",
+      "stop": ["do_not_refuse"],
+      "draft_hint": "Не найден клиент/договор в ПО. Уточнить идентификаторы."
+    },
+    {
+      "id": "R2",
+      "when": "bankruptcy_present",
+      "action": "escalate_B",
+      "stop": ["do_not_template_OCH"],
+      "draft_hint": "Признак банкротства — передать в контур Б."
+    },
+    {
+      "id": "R3",
+      "when": "all_bureaus_match_po",
+      "action": "draft_refusal",
+      "stop": [],
+      "draft_hint": "Информация в НБКИ/Эквифакс/ОКБ отображается корректно."
+    },
+    {
+      "id": "R4",
+      "when": "bureau_status_mismatch",
+      "action": "draft_correction",
+      "stop": ["await_bureau_before_client_reply"],
+      "draft_hint": "Расхождение статуса/закрытия/продажи — корректировочная выгрузка."
+    },
+    {
+      "id": "R5",
+      "when": "overdue_mismatch",
+      "action": "draft_correction_or_refusal_after_date_check",
+      "stop": ["await_bureau_before_client_reply_if_corrected"],
+      "draft_hint": "Сверить даты просрочки с ПО; при расхождении — как R4, при совпадении — как R3."
+    },
+    {
+      "id": "R6",
+      "when": "else",
+      "action": "escalate_human",
+      "stop": ["do_not_pick_side"],
+      "draft_hint": "Неоднозначность — только факты и чеклист."
+    }
+  ],
+  "gold_branch_to_rule": {
+    "korrektno": "R3",
+    "korrektirovka": "R4",
+    "pko": "R3_or_R4",
+    "prosrochka": "R5",
+    "zakryt": "R3_or_R4",
+    "bankrot_cross": "R2"
+  }
+}

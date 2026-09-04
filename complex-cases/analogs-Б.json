@@ -1,0 +1,882 @@
+{
+  "type": "Б",
+  "count": 87,
+  "subtypes": {
+    "bankrot_fix": 13,
+    "other": 32,
+    "korrektno_law": 39,
+    "pko_bankrot": 3
+  },
+  "cases": [
+    {
+      "task_id": "478668",
+      "title": "ОСПАРИВАНИЕ Экви Саммит 2256153 Орешкин Владимир Олегович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/478668/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, ОфОтв_Пр",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 38,
+      "snippet": "В общем была продажа договора 16.12.2024",
+      "has_interim": false
+    },
+    {
+      "task_id": "472894",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 3033440 Иванов Артём Владимирович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472894/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, 10+, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 30,
+      "snippet": "в эквифаксе нет банкротства, займ активен",
+      "has_interim": false
+    },
+    {
+      "task_id": "479701",
+      "title": "ОСПАРИВАНИЕ  НБКИ   Саммит  1883367 - Чалаева Вера Равилевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/479701/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв_Пр",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 30,
+      "snippet": "Алина Горячева просьба проверить клиента на банкротство",
+      "has_interim": false
+    },
+    {
+      "task_id": "468867",
+      "title": "ОСПАРИВАНИЕ Экви МКК ДЗБР 1891495 Закиев Ильназ Радикович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468867/",
+      "tags": "Оспаривание, Б, 6+, 10+, ПрОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 29,
+      "snippet": "В НБКИ информация корректна, признан банкротом",
+      "has_interim": false
+    },
+    {
+      "task_id": "469246",
+      "title": "ОСПАРИВАНИЕ ОКБ - МФК \"Саммит\" 1446531 - Шевелева Любовь Викторовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/469246/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, 10+, ОфОтв_Пр",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 29,
+      "snippet": "Вручную убрал просрочки в блоках 25,26,27 начиная с 27.02.2020 (крайняя дата к 19.02.2020) в блоке 28 платежи с 27.02.2020 проставил, как будто были совершены во время без просрочек ------------------------------------------------------ Юли",
+      "has_interim": false
+    },
+    {
+      "task_id": "479842",
+      "title": "ОСПАРИВАНИЕ ОКБ ПКО «Доброзайм» 2481691 Меняйло Анастасия Алексеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/479842/",
+      "tags": "Оспаривание, Б, ПрОтв, 6+, 10+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 26,
+      "snippet": "2481691 - Меняйло Анастасия Алексеевна (ПД:7119432902) / (9859369) - 051 83 6 2306051150_05.06.2023_90000р. / 3f07230d-9784-11d9-9721-8c231e97f137-d - МФК \"Саммит\" НБКИ - продан в ПКО Эквифакс - продан в ПКО ОКБ - продан в ПКО направляю кор",
+      "has_interim": false
+    },
+    {
+      "task_id": "490276",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 3758579 - Позднякова Ксения Алексеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/490276/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 24,
+      "snippet": "Елена Дугина Евгений Ветров произвел остановку начислений с 10.06.2024",
+      "has_interim": false
+    },
+    {
+      "task_id": "487397",
+      "title": "ОСПАРИВАНИЕ Эквифакс МФК \"Саммит\" 4049802 Эралиев Тимур Русланович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487397/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 20,
+      "snippet": "Все отображается корректно, анкеты подписаны, паспорт сходится",
+      "has_interim": false
+    },
+    {
+      "task_id": "487361",
+      "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 4570483 Кожухарь Ирина Анатольевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487361/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 17,
+      "snippet": "НБКИ Код основания прекращения обязательства 16",
+      "has_interim": false
+    },
+    {
+      "task_id": "482969",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит 3950098 - Коринь Людмила Юрьевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482969/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 16,
+      "snippet": "У нас в ПО не проставлена продажа и статус. В БКИ соответвенно тоже",
+      "has_interim": false
+    },
+    {
+      "task_id": "489808",
+      "title": "ОСПАРИВАНИЕ ЭКВИ МФК \"Саммит\" 2494900 Ахатов Артур Рифакович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/489808/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 16,
+      "snippet": "Александр Голузинец , кл банкрот не вижу чтоб сумма зафиксировалась, просьба проверить ещё раз в бюро",
+      "has_interim": false
+    },
+    {
+      "task_id": "470010",
+      "title": "ОСПАРИВАНИЕ ОКБ ДОБРОЗАЙМ 3416388 - Ткач Дмитрий Витальевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470010/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, 10+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 15,
+      "snippet": "В БКИ договор отображается, как активный. Направил корректировки НБКИ - 73593 ЭКВИ - 73594 ОКБ - 73595",
+      "has_interim": false
+    },
+    {
+      "task_id": "479596",
+      "title": "ОСПАРИВАНИЕ ЭКВИ ПКО 2544772 Варфоломеева Вилена Веньсовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/479596/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "pko_bankrot",
+      "n_human_msgs": 15,
+      "snippet": "Алина Горячева просьба проверить клиента на банкротство",
+      "has_interim": false
+    },
+    {
+      "task_id": "482979",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МКК  ДЗБР   3887954 - Белохвостикова Юлия Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482979/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 15,
+      "snippet": "В ОКБ информация отображается корректно, договор активен, просрочки верны",
+      "has_interim": false
+    },
+    {
+      "task_id": "484612",
+      "title": "ОСПАРИВАНИЕ ОКБ ПКО «Доброзайм» 4234282 - Москвитин Руслан Васильевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/484612/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 15,
+      "snippet": "НБКИ Признак наличия просроченной задолженности 1",
+      "has_interim": false
+    },
+    {
+      "task_id": "486246",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит  5112232 - Данилова Наталья Михайловна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/486246/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, 10+, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 15,
+      "snippet": "Необходимо выполнить остановку начислений , так как дата признания была 25.09.2025, но в БКИ начисления зафиксировались 04.07.2026.",
+      "has_interim": false
+    },
+    {
+      "task_id": "492109",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 3591247 - Кинчаров Андрей Владимирович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/492109/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 15,
+      "snippet": "У нас в ПО данный займ у клиента зафиксирован как закрыт",
+      "has_interim": false
+    },
+    {
+      "task_id": "478953",
+      "title": "ОСПАРИВАНИЕ  НБКИ   Саммит  4556515 - Ежунова Анна Сергеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/478953/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 14,
+      "snippet": "НБКИ 38 блок обязательства прекращены (код 16)",
+      "has_interim": false
+    },
+    {
+      "task_id": "487363",
+      "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 4126070 Шаронова Оксана Витальевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487363/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 14,
+      "snippet": "НБКИ Код основания прекращения обязательства 16",
+      "has_interim": false
+    },
+    {
+      "task_id": "487971",
+      "title": "ОСПАРИВАНИЕ Эквифакс МФК \"Саммит\" 4126070  Шаронова Оксана Витальевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487971/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 14,
+      "snippet": "анкета к заявке подписана, анкеты к договору нет",
+      "has_interim": false
+    },
+    {
+      "task_id": "482689",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 3758579 - Позднякова Ксения Алексеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482689/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 13,
+      "snippet": "Данные паспорта в по и в вх. письме (Сведения о ранее выданных паспортах) сходятся",
+      "has_interim": false
+    },
+    {
+      "task_id": "472850",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 3038506 Оленёв Максим Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472850/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 12,
+      "snippet": "Направил корректировки в БКИ НБКИ - 74595 ЭКВИ - 74596 ОКБ - 74597",
+      "has_interim": false
+    },
+    {
+      "task_id": "473948",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 4572548 Санникова Алина Александровна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/473948/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 12,
+      "snippet": "В экви и окб есть информация о продаже, в НБКИ все пусто, направил массовую - 75063",
+      "has_interim": false
+    },
+    {
+      "task_id": "483312",
+      "title": "ОСПАРИВАНИЕ  Экви   ПКО ДОБРОЗАЙМ 3241638 - Сабитова Яна Аликовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/483312/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "pko_bankrot",
+      "n_human_msgs": 12,
+      "snippet": "Юлия Игнатенко прекратила, направляю выгрузки",
+      "has_interim": false
+    },
+    {
+      "task_id": "488438",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 3913692 - Коваленко Максим Николаевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/488438/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 12,
+      "snippet": "анкета к заявке подписана, анкеты к договору нет",
+      "has_interim": false
+    },
+    {
+      "task_id": "488572",
+      "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 2110272 Шестов Денис Юрьевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/488572/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 12,
+      "snippet": "Договор подписан, анкету прикрепила, во всех БКИ займ прекращен код 16",
+      "has_interim": false
+    },
+    {
+      "task_id": "467308",
+      "title": "ОСПАРИВАНИЕ НБКИ ПКО «Доброзайм» 3572098  Мельникова Екатерина Алексеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/467308/",
+      "tags": "Оспаривание, 6+, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 11,
+      "snippet": "Договор был продан ПКО РСВ 06.09.2023, в БКИ отображается корректная информация",
+      "has_interim": false
+    },
+    {
+      "task_id": "482978",
+      "title": "ОСПАРИВАНИЕ  ОКБ  ПКО ДОБРОЗАЙМ 3241638 - Сабитова Яна Аликовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482978/",
+      "tags": "Оспаривание, Б, 6+, ПрОтв, 10+, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 11,
+      "snippet": "Паспорт корректный. Отказа по мошенничеству нет. Договор прекращён по банкротству.",
+      "has_interim": false
+    },
+    {
+      "task_id": "484611",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4023926 - Давыдов Денис Андреевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/484611/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 11,
+      "snippet": "сумма процентов и по иным требованиям зафиксирована",
+      "has_interim": false
+    },
+    {
+      "task_id": "469966",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 4170105 - Седунов Вадим Леонидович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/469966/",
+      "tags": "Оспаривание, Б",
+      "subtype": "other",
+      "n_human_msgs": 10,
+      "snippet": "4170105 - Седунов Вадим Леонидович (ПД:2518563499) / (13264768) - 281 80 6 2506161453_16.06.2025_57190р. / 300a34e2-deb4-11db-90dd-efcfc5f070c9-4 - МФК \"Саммит\" НБКИ - банкрот, информация корректна Эквифакс - банкрот, информация корректна О",
+      "has_interim": false
+    },
+    {
+      "task_id": "469976",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 3839081 - Савченко Виктория Эдуардовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/469976/",
+      "tags": "Оспаривание, Б, 6+, 10+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 10,
+      "snippet": "В БКИ договор отображается, как активный. Направляю корректировки НБКИ - 73596 ЭКВИ - 73597 ОКБ - 73598",
+      "has_interim": false
+    },
+    {
+      "task_id": "472859",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 3887046 Асланова Алёна Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472859/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 10,
+      "snippet": "Отказа по мошенничеству нет. Анкета к заявке подписана. Информация в БКИ отображается корректно.",
+      "has_interim": false
+    },
+    {
+      "task_id": "474012",
+      "title": "ОСПАРИВАНИЕ Экви Саммит 3033440 Иванов Артём Владимирович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/474012/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 10,
+      "snippet": "после начала разбора оспаривания проверил не в работе ли у кого-нибудь еще кл. Анастасия Абдурахманова тоже делает по нему оспаривание, поэтому у себя добавил как связанную задачу. У нее все готово к ответу в БКИ",
+      "has_interim": false
+    },
+    {
+      "task_id": "483317",
+      "title": "ОСПАРИВАНИЕ  ОКБ   ПКО ДОБРОЗАЙМ  2316956 - Филатов Вячеслав Алексеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/483317/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 10,
+      "snippet": "Во всех БКИ код 16, мошенничества нет, паспорт сходится, анкеты и договор подписаны",
+      "has_interim": false
+    },
+    {
+      "task_id": "483333",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит  4249931 - Столярова Олеся Михайловна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/483333/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 10,
+      "snippet": "во всех бки код 16 (банкрот), анкета и договор подписана, мошенничества нет, паспорт сходится.",
+      "has_interim": false
+    },
+    {
+      "task_id": "483345",
+      "title": "ОСПАРИВАНИЕ  ОКБ   ПКО ДОБРОЗАЙМ  4749918 - Бедова Надежда Михайловна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/483345/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 10,
+      "snippet": "Договор активен, написал Юлия Игнатенко для уточнения",
+      "has_interim": false
+    },
+    {
+      "task_id": "486066",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит  4624716 - Родных Юлия Игоревна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/486066/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 10,
+      "snippet": "ПД корректны Отказа по мошенничеству нет Юристы сказали - \"Процедура банкротства была завершена до выдачи займа, ничего не закрываем\"",
+      "has_interim": false
+    },
+    {
+      "task_id": "458675",
+      "title": "ОСПАРИВАНИЕ ОКБ МКК ДЗБР 3045310 Никитина Анастасия Дмитриевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458675/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "Юлия Игнатенко, закройте пожалуйста договор по причине банкротства",
+      "has_interim": false
+    },
+    {
+      "task_id": "471942",
+      "title": "ОСПАРИВАНИЕ ОКБ  ПКО «Доброзайм» 4857803 - Забродин Максим Алексеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/471942/",
+      "tags": "Оспаривание, ПрОтв, Б, 6+, 10+, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 9,
+      "snippet": "Отправил корректировку НБКИ 74130 ЭКВИ 74131 ОКБ 74132",
+      "has_interim": false
+    },
+    {
+      "task_id": "472893",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 3902241 Козленко Валерия Игоревна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472893/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "Договор прекращен по причине банкротства за 18.06.2026. Направляю корректировочные выгрузки НБКИ - 74674 ЭКВИ - 74675 ОКБ - 74676",
+      "has_interim": false
+    },
+    {
+      "task_id": "472904",
+      "title": "ОСПАРИВАНИЕ Экви Саммит 3101221 Садыков Хусейн Шомахмадович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472904/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "НБКИ - Клиент признан банкротом, обязательства прекращены",
+      "has_interim": false
+    },
+    {
+      "task_id": "475317",
+      "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 1091363 - Пурлац Дмитрий Эдуардович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/475317/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "Договор прекращен по банкротству 04.03.2020. В БКИ информация о банкротстве отсутствует. Направил корректировки НБКИ - 74727 ЭКВИ - 74728 ОКБ - 74729",
+      "has_interim": false
+    },
+    {
+      "task_id": "482722",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит   4798250 - Кузнецов Вадим Игоревич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482722/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "Блок с просрочкой в ОКБ отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "484027",
+      "title": "ОСПАРИВАНИЕ ОКБ ПКО «Доброзайм» 2966544 - Морозова Дарья Андреевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/484027/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "НБКИ Код основания прекращения обязательства 16",
+      "has_interim": false
+    },
+    {
+      "task_id": "486208",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит   4448992 - Бидо Марина Олеговна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/486208/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 9,
+      "snippet": "направила корректировки: НБКИ - 79842 ЭКВИ - 79843 ОКБ - 79844",
+      "has_interim": false
+    },
+    {
+      "task_id": "492390",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4325447 - Нестерова Юлия Геннадьевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/492390/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 9,
+      "snippet": "Уточнил у Юлия Игнатенко по поводу банкротства этого кл. - \"У нее банкротство было завершено до выдачи займа, поэтому ничего не прекращаем\" ПД корректны Отказа по мошенничеству нет",
+      "has_interim": false
+    },
+    {
+      "task_id": "459391",
+      "title": "ОСПАРИВАНИЕ ОКБ ПКО Доброзайм 601612 Бикбаев Олег Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459391/",
+      "tags": "Оспаривание, Б",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 8,
+      "snippet": "Юлия Игнатенко, просьба закрыть договор по причине банкротства",
+      "has_interim": false
+    },
+    {
+      "task_id": "468275",
+      "title": "ОСПАРИВАНИЕ НБКИ МКК ДЗБР 4545617 Тупикова Елизавета Алексеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468275/",
+      "tags": "Оспаривание, Б",
+      "subtype": "other",
+      "n_human_msgs": 8,
+      "snippet": "В НБКИ просрочки после банкроства нет, даты банкротства совпадают",
+      "has_interim": false
+    },
+    {
+      "task_id": "468484",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 3198434 Стихин Евгений Васильевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468484/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "pko_bankrot",
+      "n_human_msgs": 8,
+      "snippet": "окб. МФК отображается продажа в КА доброзайм",
+      "has_interim": false
+    },
+    {
+      "task_id": "468488",
+      "title": "ОСПАРИВАНИЕ НБКИ ПКО Доброзайм 3198434 Стихин Евгений Васильевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468488/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 8,
+      "snippet": "Информация в НБКИ отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "468643",
+      "title": "ОСПАРИВАНИЕ ОКБ - МФК \"Саммит\" 4805920 - Ефремов Дмитрий Алексеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468643/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 8,
+      "snippet": "Договор в БКИ отображается, как активный, направляю корректировки НБКИ - 73027 ЭКВИ - 73028 ОКБ - 73029",
+      "has_interim": false
+    },
+    {
+      "task_id": "472847",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 3381200 Девятова Ксения Альбертовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472847/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 8,
+      "snippet": "Информация в ЭКВИ отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "472849",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 4892454 Каримова Кристина Сиджоатовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472849/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 8,
+      "snippet": "Информация в НБКИ отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "490038",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 6166867 - Морсова Алина Викторовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/490038/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 8,
+      "snippet": "Дарья Дерусова , что в бки отображается ?",
+      "has_interim": false
+    },
+    {
+      "task_id": "493837",
+      "title": "ОСПАРИВАНИЕ НБКИ МКК \"ДЗБР\" 4911202 Харламов Антон Владимирович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/493837/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 8,
+      "snippet": "Дарья Дерусова, можешь формировать ответ",
+      "has_interim": false
+    },
+    {
+      "task_id": "459397",
+      "title": "ОСПАРИВАНИЕ ОКБ ПКО Доброзайм 3133958 Яцык Анастасия Константиновна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459397/",
+      "tags": "Оспаривание, Б",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 7,
+      "snippet": "Юлия Игнатенко, просьба закрыть договор по причине банкротства",
+      "has_interim": false
+    },
+    {
+      "task_id": "470000",
+      "title": "ОСПАРИВАНИЕ ОКБ ДЗБР 5955107 - Романенко Дарья Валериевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470000/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "other",
+      "n_human_msgs": 7,
+      "snippet": "5955107 - Романенко Дарья Валериевна (ПД:6023561503) / (15328268) - 819 43 7 2605210150_21.05.2026_8500р. / 26b9125d-e95a-11dc-8b59-a2686a5d7c0e-f - МКК \"ДЗБР\" НБКИ - договор закрыт Эквифакс - договор закрыт ОКБ - договор закрыт",
+      "has_interim": false
+    },
+    {
+      "task_id": "472091",
+      "title": "ОСПАРИВАНИЕ НБКИ ПКО Доброзайм 3416388 Ткач Дмитрий Витальевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/472091/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "other",
+      "n_human_msgs": 7,
+      "snippet": "В связанной задаче были проделаны все работы по передаче информации в БКИ о банкротстве клиента",
+      "has_interim": false
+    },
+    {
+      "task_id": "492205",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 5273029 - Лисогор Наталья Викторовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/492205/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 7,
+      "snippet": "договор не закрыт, т.к. процедура банкротства еще не завершена",
+      "has_interim": false
+    },
+    {
+      "task_id": "458595",
+      "title": "ОСПАРИВАНИЕ ЭКВИ ПКО ДОБРОЗАЙМ 4761873 Кулик Никита Алманович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458595/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 6,
+      "snippet": "Информация о продаже в ПКО \"Доброзайм\" отображается корректно: - МФК \"Саммит\" НБКИ - продано 12.09.2025 Эквифакс - продано 12.09.2025 ОКБ - продано 12.09.2025 Информация о прекращении процедуры банкротства (в таблице Bankrot) у нас отсутств",
+      "has_interim": false
+    },
+    {
+      "task_id": "484024",
+      "title": "ОСПАРИВАНИЕ ОКБ  МФК \"Саммит\" 4205928 - Захарова Магда нелле Андреевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/484024/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 6,
+      "snippet": "Договор прекращён по банкротству, но нету подписи у анкеты",
+      "has_interim": false
+    },
+    {
+      "task_id": "491215",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4392116 - Апакин Игорь Николаевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/491215/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 6,
+      "snippet": "процедура банкротства началась после продажи, мы передаем только продажу",
+      "has_interim": false
+    },
+    {
+      "task_id": "456066",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 4774374 Владимирский Руслан Леонидович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/456066/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 5,
+      "snippet": "Юлия Игнатенко, можете, пожалуйста, закрыть договор по причине банкротства",
+      "has_interim": false
+    },
+    {
+      "task_id": "462045",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 3662465 Чумичёва Татьяна Алексеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/462045/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 5,
+      "snippet": "Информация в ОКБ отображается корректно, в НБКИ код прекращения обязательства 99, в ЭКВИ отображается также некорректно.",
+      "has_interim": false
+    },
+    {
+      "task_id": "462691",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 3837742 Конев Николай Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/462691/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 5,
+      "snippet": "Юлия Игнатенко, закройте пожалуйста договор по причине банкротства",
+      "has_interim": false
+    },
+    {
+      "task_id": "465964",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 3971440 - Кевхишвили Валерия Вадимовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465964/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 5,
+      "snippet": "Юлия Игнатенко, просьба закрыть по банкротству",
+      "has_interim": false
+    },
+    {
+      "task_id": "477058",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4556515 - Ежунова Анна Сергеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/477058/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "bankrot_fix",
+      "n_human_msgs": 5,
+      "snippet": "4556515 - Ежунова Анна Сергеевна (ПД:6719861191) / (11980126) - 003 81 5 2409110063_11.09.2024_67000р. / 7ed135f7-03e0-11db-9393-d9bfcba8fc84-7 заявка перешла в договор, но договор выдан у нас в ПО, уточню данный момент у Юлия Игнатенко - М",
+      "has_interim": false
+    },
+    {
+      "task_id": "478952",
+      "title": "ОСПАРИВАНИЕ  НБКИ   Саммит  4572548 - Санникова Алина Александровна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/478952/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 5,
+      "snippet": "ответ направил, в котором указал, что договор продан и отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "451377",
+      "title": "ОСПАРИВАНИЕ ОБК САММИТ 4614907 - Тимофеева Виктория Валерьевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/451377/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 4,
+      "snippet": "Кл признан банкротом 31.01.2026. В ПО и БКИ Просрочка отображается только до этого числа, банкротство отображается корректно. По закону начисление процентов и пеней прекращается на дату признания банкротом, дни просрочки могут капать. Таким",
+      "has_interim": false
+    },
+    {
+      "task_id": "454811",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 3734506  Артемьева Ксения Михайловна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/454811/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 4,
+      "snippet": "В ПО договор отображается как закрытый. В БКИ отображается следующая информация: 3734506 - Артемьева Ксения Михайловна (ПД:9416586105) / (9728592) - 003 80 6 2305070956_07.05.2023_25000р. / 15d3c5bc-80a4-11d9-8c1b-e79e3d99d2f3-d - МФК \"Самм",
+      "has_interim": false
+    },
+    {
+      "task_id": "461699",
+      "title": "ОСПАРИВАНИЕ Экви Саммит 4203981 Керейтова Римма Альбертовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/461699/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 4,
+      "snippet": "Статус договора в ПО - \"прекращен\". В БКИ статус продан. направляю корректировки по блоку 38 70475 ОКБ 70474 ЭКВИ 70473 НБКИ",
+      "has_interim": false
+    },
+    {
+      "task_id": "468969",
+      "title": "ОСПАРИВАНИЕ ОКБ - МФК \"Саммит\" 3518410 - Тоирова Юлия Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/468969/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "other",
+      "n_human_msgs": 4,
+      "snippet": "Юлия Игнатенко можешь проверить и закрыть по банкротству, пожалуйста",
+      "has_interim": false
+    },
+    {
+      "task_id": "486816",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит   2727323 - Чукавина Ольга Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/486816/",
+      "tags": "Оспаривание, Б, 6+, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 4,
+      "snippet": "Работа по данному кл проводится в задаче https://resultforyou.ru/workgroups/group/437/tasks/task/view/486720/",
+      "has_interim": false
+    },
+    {
+      "task_id": "487959",
+      "title": "ОСПАРИВАНИЕ Эквифакс МФК \"Саммит\" 2727323  Чукавина/Онорина Ольга Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487959/",
+      "tags": "Оспаривание, Б, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 4,
+      "snippet": "Работа по данному кл проводится в задаче https://resultforyou.ru/workgroups/group/437/tasks/task/view/486720/",
+      "has_interim": false
+    },
+    {
+      "task_id": "456905",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 2267334 Долгачев Павел Игоревич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/456905/",
+      "tags": "Б, Оспаривание",
+      "subtype": "other",
+      "n_human_msgs": 3,
+      "snippet": "Невозможно удалить информацию о просроченных платежах. Клиент оформил банкротство после возникновения просрочки. С нашей стороны остается написать о корректности оспариваемых сведений",
+      "has_interim": false
+    },
+    {
+      "task_id": "458572",
+      "title": "ОСПАРИВАНИЕ ЭКВИ Саммит 3201612 Бычков Роман Вячеславович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458572/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Инфо отображается корректно, закрыт по банкротству",
+      "has_interim": false
+    },
+    {
+      "task_id": "458933",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 4316273 Боташев Арафат Русланович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458933/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Договор прекращен 11.04.2026, дата завершения процедуры банкротства 26.03.2026 В БКИ отображается следующая информация: - МФК \"Саммит\" НБКИ - Договор прекращен 11.04.2026. Клиент признан банкротом, обязательства прекращены Эквифакс - Догово",
+      "has_interim": false
+    },
+    {
+      "task_id": "459288",
+      "title": "ОСПАРИВАНИЕ Экви Саммит 84146 Запорожец Сергей Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459288/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Проверил банкротство в таблице Bankrot, процедура банкротства была завершена 15.11.2024 В БКИ информация о банкротстве отсутствует, направил корректировки: 84146 - Запорожец Сергей Александрович (ПД:2914659232) / (14041220) - 003 86 7 25103",
+      "has_interim": false
+    },
+    {
+      "task_id": "459333",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 3740789 Высоцкая Валерия Олеговна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459333/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Инфо о просрочке и банкротству отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "461865",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 4077413 Егорова Анастасия Игоревна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/461865/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Информация о банкротстве во всех БКИ отображается корректно",
+      "has_interim": false
+    },
+    {
+      "task_id": "463060",
+      "title": "ОСПАРИВАНИЕ Экви Саммит 1757278 Скорняков Вячеслав Сергеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/463060/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Информация в БКИ отображается корректно. Готовлю ответ",
+      "has_interim": false
+    },
+    {
+      "task_id": "465937",
+      "title": "ОСПАРИВАНИЕ НБКИ МФК \"Саммит\" 4302542 - Лукоянов Андрей Андреевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465937/",
+      "tags": "Оспаривание, 6+, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Договор был прекращен 24.04.2025, дата завершения процедуры реализации имущества в соответствии с приложенным заявлением - 16.03.2026 Информация в БКИ по договору отображается корректно: МФК Саммит НБКИ - Продажа АО ПКО \"ЦДУ\" от 24.04.2025 ",
+      "has_interim": false
+    },
+    {
+      "task_id": "465973",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 3341711 - Родионова Татьяна Романовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465973/",
+      "tags": "Оспаривание, Б, 6+",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 3,
+      "snippet": "Информация в БКИ отображается корректно, клиент признан банкротом, договор не активен. Готовлю ответ",
+      "has_interim": false
+    },
+    {
+      "task_id": "449914",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 4140116 - Филипенко Юлия Николаевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/449914/",
+      "tags": "Оспаривание, Б",
+      "subtype": "other",
+      "n_human_msgs": 2,
+      "snippet": "Договор прекращен, данные в БКИ отображаются корректно. Отправляю ответ на оспаривание",
+      "has_interim": false
+    },
+    {
+      "task_id": "458578",
+      "title": "ОСПАРИВАНИЕ ЭКВИ Саммит 4316273  Боташев Арафат Русланович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/458578/",
+      "tags": "Оспаривание, Б",
+      "subtype": "other",
+      "n_human_msgs": 2,
+      "snippet": "данные в БКИ корректны, банкрот. направила ответ",
+      "has_interim": false
+    },
+    {
+      "task_id": "459336",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 2299462 Солодун Юлия Александровна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459336/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 2,
+      "snippet": "Инфо отображается корректно, договор закрыт по банкротству",
+      "has_interim": false
+    },
+    {
+      "task_id": "459393",
+      "title": "ОСПАРИВАНИЕ ОКБ ПКО Доброзайм 4630063 Сотник Евгений Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/459393/",
+      "tags": "Оспаривание, Б",
+      "subtype": "korrektno_law",
+      "n_human_msgs": 2,
+      "snippet": "информация о договоре отображается корректно, договор закрыт по банкроствту, направляю ответ",
+      "has_interim": false
+    }
+  ]
+}

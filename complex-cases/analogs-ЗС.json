@@ -1,0 +1,332 @@
+{
+  "type": "ЗС",
+  "count": 32,
+  "subtypes": {
+    "demerge": 15,
+    "old_passport": 6,
+    "other": 7,
+    "linked_task": 4
+  },
+  "cases": [
+    {
+      "task_id": "470408",
+      "title": "ОСПАРИВАНИЕ НБКИ САММИТ 5464169 - Никонов Сергей Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470408/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 46,
+      "snippet": "Ангелина Апухтина Даниил Переверзев У кл 2 паспорта с одинаковым ИНН",
+      "has_interim": false
+    },
+    {
+      "task_id": "475097",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4058458 - Александрова Александра Максимовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/475097/",
+      "tags": "Оспаривание, ЗС, ПрОтв, 6+, 10+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 23,
+      "snippet": "Алексей Михальков , направь сразу промежуточный",
+      "has_interim": true
+    },
+    {
+      "task_id": "446401",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 5364296 Брагина",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446401/",
+      "tags": "Оспаривание, ЗС, 6+, 10+, ПрОтв",
+      "subtype": "old_passport",
+      "n_human_msgs": 22,
+      "snippet": "промежуточный ответ направлен, двигаю срок",
+      "has_interim": true
+    },
+    {
+      "task_id": "467494",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 5509408 - Попов Александр Владимирович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/467494/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+",
+      "subtype": "demerge",
+      "n_human_msgs": 21,
+      "snippet": "у кл в старых поаспортах задвоен его текущий оканчивающийся на 305",
+      "has_interim": false
+    },
+    {
+      "task_id": "470411",
+      "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 5464169 - Никонов Сергей Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/470411/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 21,
+      "snippet": "Ранее по клиенту выполнялись корректировки в задаче https://resultforyou.ru/workgroups/group/437/tasks/task/view/456080/ Направил в связанном оспаривании письмо в бюро. Ответа пока не было",
+      "has_interim": false
+    },
+    {
+      "task_id": "484610",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 5813639 - Иванова Екатерина Сергеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/484610/",
+      "tags": "Оспаривание, ЗС, 6+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 21,
+      "snippet": "Удалил прошлый паспорт клиента, направил корректировки 80050, 80051, 80052",
+      "has_interim": false
+    },
+    {
+      "task_id": "485799",
+      "title": "ОСПАРИВАНИЕ НБКИ САММИТ 4542330 - Иванова Елена Викторовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/485799/",
+      "tags": "Оспаривание, ЗС, ПрОтв, 6+, 10+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 21,
+      "snippet": "удалить пд 8009 867837 8011 401589 8001 484923",
+      "has_interim": false
+    },
+    {
+      "task_id": "487636",
+      "title": "ОСПАРИВАНИЕ НБКИ МКК \"ДЗБР\" 1412636  Царева Елена Сергеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487636/",
+      "tags": "Оспаривание, ЗС, ПрОтв, 6+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 20,
+      "snippet": "Выгрузки с некорректным паспортом НБКИ - 80567 ЭКВИ - 80568 ОКБ - 80569 Выгрузки с удалением 7809 748927 [code]INS ERT IN TO dbo.Partner_OldPasp(keyPart, dat, PS, PN, keyw, dt) VALUES(1412636, '2009-10-01 00:00:00', dbo.f_DC(7809, '', 1), d",
+      "has_interim": false
+    },
+    {
+      "task_id": "482992",
+      "title": "ОСПАРИВАНИЕ  ОКБ   МФК Саммит  5278962 - Локтионова Анна Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/482992/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+, ОфОтв_Пр",
+      "subtype": "demerge",
+      "n_human_msgs": 19,
+      "snippet": "Направил корректировки 80351, 80352, 80353",
+      "has_interim": false
+    },
+    {
+      "task_id": "486692",
+      "title": "ОСПАРИВАНИЕ НБКИ САММИТ 5813639 - Иванова Екатерина Сергеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/486692/",
+      "tags": "Оспаривание, ЗС, 6+, ОфОтв",
+      "subtype": "old_passport",
+      "n_human_msgs": 13,
+      "snippet": "В связанном оспаривании некорректный паспорт 3609 000208 был удален из ПО",
+      "has_interim": false
+    },
+    {
+      "task_id": "491776",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 4157918 Васильев",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/491776/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 12,
+      "snippet": "Удаляю паспорт [code] INS ERT IN TO dbo.Partner_OldPasp(keyPart, dat, PS, PN, keyw, dt) VALUES(4157918, '2013-07-04 00:00:00', dbo.f_DC('6813', '', 1), dbo.f_DC('774028', '', 1), 20411, '2024-01-10 00:00:00.000') [/code] Выгрузки с чужим па",
+      "has_interim": false
+    },
+    {
+      "task_id": "492746",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 4724648 - Сальников Сергей Сергеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/492746/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "other",
+      "n_human_msgs": 12,
+      "snippet": "направила корректировки 3.1: НБКИ - 82521 ЭКВИ - 82522 ОКБ - 82523",
+      "has_interim": false
+    },
+    {
+      "task_id": "493418",
+      "title": "ОСПАРИВАНИЕ (возврат) НБКИ САММИТ 4542330 - Иванова Елена Викторовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/493418/",
+      "tags": "Возврат, Оспаривание, ЗС, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 11,
+      "snippet": "в связанной задаче происходило разделение, направляю эксель файл в нбки на разделение",
+      "has_interim": false
+    },
+    {
+      "task_id": "455890",
+      "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 5446398 Волков Владислав Сергеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/455890/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв",
+      "subtype": "other",
+      "n_human_msgs": 10,
+      "snippet": "ОКБ и ЭКВИ скорректировано. НБКИ новый файл",
+      "has_interim": false
+    },
+    {
+      "task_id": "475509",
+      "title": "ОСПАРИВАНИЕ ОКБ МКК \"ДЗБР\" 4512440 - Лисовская Ксения Робертовна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/475509/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 10,
+      "snippet": "У Ксении по ДЗБР есть только заявки с отказом клиентА без одобрений и две заявки с отказом клиентУ по самозапрету Направляю исключение клиента ДЗБР НБКИ - 75493 ЭКВИ - 75494 ОКБ - 75495",
+      "has_interim": false
+    },
+    {
+      "task_id": "492742",
+      "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 5824966 - Зозуля Елена Николаевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/492742/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "old_passport",
+      "n_human_msgs": 10,
+      "snippet": "Андрей Быковский, просьба взять в работу",
+      "has_interim": false
+    },
+    {
+      "task_id": "446614",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 3082883 Орлов Евгений Олегович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446614/",
+      "tags": "Оспаривание, ЗС, 6+, 10+, ПрОтв",
+      "subtype": "other",
+      "n_human_msgs": 9,
+      "snippet": "нашли нужный ИНН, завтра направлю выгрузки и откорректирую",
+      "has_interim": false
+    },
+    {
+      "task_id": "487950",
+      "title": "ОСПАРИВАНИЕ Эквифакс МКК \"ДЗБР\" 5602474 Спивак Денис Андреевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487950/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "old_passport",
+      "n_human_msgs": 9,
+      "snippet": "направил корректировки 80916, 80917, 80918",
+      "has_interim": false
+    },
+    {
+      "task_id": "489824",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 5747969 Миронова Алина Ильдаровна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/489824/",
+      "tags": "Оспаривание, ЗС, 6+, ОфОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 9,
+      "snippet": "Алексей Михальков что по задаче? когда планируешь приступить?",
+      "has_interim": false
+    },
+    {
+      "task_id": "466876",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 4254477 Громова",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/466876/",
+      "tags": "Оспаривание, ЗС",
+      "subtype": "other",
+      "n_human_msgs": 8,
+      "snippet": "дополнительно проверил ОКБ от ДЗБР, ИНН корректный",
+      "has_interim": false
+    },
+    {
+      "task_id": "451324",
+      "title": "ОСПАРИВАНИЕ ОКБ САММИТ 5580093 - Петрова Светлана Николаевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/451324/",
+      "tags": "Оспаривание, ЗС",
+      "subtype": "old_passport",
+      "n_human_msgs": 7,
+      "snippet": "удалил паспорт 4900 132247, запрос на то, чтобы вернуть его обратно на всякий случай: SET DATEFORMAT ymd INS ERT IN TO dbo.Partner_OldPasp (keyPart, dat, PS, PN, keyw, dt) VALUES (5580093, '2022-06-01 00:00:00', dbo.f_EC('4900','',1), dbo.f",
+      "has_interim": false
+    },
+    {
+      "task_id": "457084",
+      "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 3313786 Русинов Ярослав Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457084/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+",
+      "subtype": "demerge",
+      "n_human_msgs": 7,
+      "snippet": "клиентов разделил, также направил в НБКИ файлы на разделение",
+      "has_interim": false
+    },
+    {
+      "task_id": "444796",
+      "title": "ОСПАРИВАНИЕ НБКИ Саммит 4681596 Вундер Ольга Сергеевна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/444796/",
+      "tags": "ЗС, Оспаривание, 6+, ПрОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 4,
+      "snippet": "Данные относительно паспорта были скорректированы в задаче https://resultforyou.ru/workgroups/group/437/tasks/task/view/400513/ отправил ответ на оспаривание, а также отправил на почтовый адрес demerge@nbki.ru запрос на разделение двух СКИ.",
+      "has_interim": false
+    },
+    {
+      "task_id": "447058",
+      "title": "ОСПАРИВАНИЕ НБКИ ДЗБР 5528348 Баранов Михаил Владимирович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/447058/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв",
+      "subtype": "demerge",
+      "n_human_msgs": 4,
+      "snippet": "Ангелина Апухтина паспорт поправил по плану в рамках вот этой задачи https://resultforyou.ru/company/personal/user/636359/tasks/task/view/446085/ единственный момент, у меня были проблемы с отправкой события 3.1 и я по итогу удалил целиком ",
+      "has_interim": false
+    },
+    {
+      "task_id": "457071",
+      "title": "ОСПАРИВАНИЕ ОКБ ДЗБР 5464169 Никонов Сергей Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457071/",
+      "tags": "Оспаривание, ЗС, 6+, 10+, ПрОтв",
+      "subtype": "other",
+      "n_human_msgs": 4,
+      "snippet": "информация исправлена в задаче https://resultforyou.ru/workgroups/group/437/tasks/task/view/456080/",
+      "has_interim": false
+    },
+    {
+      "task_id": "457657",
+      "title": "ОСПАРИВАНИЕ ОКБ ДЗБР 5666473 Синицын Константин Сергеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/457657/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+",
+      "subtype": "old_passport",
+      "n_human_msgs": 4,
+      "snippet": "паспорт удален выгрузками 70040 70041 70042",
+      "has_interim": false
+    },
+    {
+      "task_id": "464156",
+      "title": "ОСПАРИВАНИЕ ОКБ Доброзайм 3082883 Орлов Евгений Олегович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/464156/",
+      "tags": "Оспаривание, ЗС, 6+, ПрОтв, 10+",
+      "subtype": "other",
+      "n_human_msgs": 4,
+      "snippet": "вчера направлял письмо в окб , так как на данный момент склеек с нашей стороны не видим",
+      "has_interim": false
+    },
+    {
+      "task_id": "487686",
+      "title": "ОСПАРИВАНИЕ Эквифакс МФК \"Саммит\" 4984329  Воронова Елена Владимировна",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/487686/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "linked_task",
+      "n_human_msgs": 4,
+      "snippet": "Все корректировки были выполнены в связанном оспаривании МКК ДЗБР",
+      "has_interim": false
+    },
+    {
+      "task_id": "492721",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4157918 - Васильев Сергей Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/492721/",
+      "tags": "Оспаривание, ЗС, ОфОтв",
+      "subtype": "linked_task",
+      "n_human_msgs": 4,
+      "snippet": "Алексей Михальков , в связанной задаче я все сделал. Думаю, можно сразу подготовить ответ, где указать номер обращения \"Обращение № 330111 от 25.08.2026\" и имя выгрузки на всякий случай",
+      "has_interim": false
+    },
+    {
+      "task_id": "465958",
+      "title": "ОСПАРИВАНИЕ ОКБ МФК \"Саммит\" 4724648 - Сальников Сергей Сергеевич",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/465958/",
+      "tags": "Оспаривание, ЗС, 6+, 10+",
+      "subtype": "linked_task",
+      "n_human_msgs": 3,
+      "snippet": "данные были скорректированы в рамках связанной задачи https://resultforyou.ru/company/personal/user/636359/tasks/task/view/459186/",
+      "has_interim": false
+    },
+    {
+      "task_id": "456914",
+      "title": "ОСПАРИВАНИЕ ОКБ Саммит 5464169 Никонов Сергей Александрович",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/456914/",
+      "tags": "Оспаривание, ЗС",
+      "subtype": "linked_task",
+      "n_human_msgs": 2,
+      "snippet": "данные были исправлены в рамках другого оспаривания, которое закреплено в связанных задачах. Направил ответ на оспаривание",
+      "has_interim": false
+    },
+    {
+      "task_id": "446085",
+      "title": "ОСПАРИВАНИЕ ОКБ ДЗБР 5528348 БАРАНОВ МИХАИЛ ВЛАДИМИРОВИЧ",
+      "url": "https://resultforyou.ru/workgroups/group/437/tasks/task/view/446085/",
+      "tags": "Оспаривание, ЗС",
+      "subtype": "other",
+      "n_human_msgs": 1,
+      "snippet": "выгрузка 65955 7A01LL000001_20260225_130224 загружена без ошибок проверил информацию по заявкам клиента, по обоим (10D7E861-9029-11DC-9828-F0527AC867C0-3, DBC3C193-70AA-11DC-8CF9-D2D4DF58145D-8) стоит код стадии рассмотрения обращения - 3, ",
+      "has_interim": false
+    }
+  ]
+}

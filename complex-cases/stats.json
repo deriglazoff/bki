@@ -1,0 +1,23 @@
+{
+  "tasks_total": 2131,
+  "by_type": {
+    "ОЧ": 553,
+    "ТЧ": 287,
+    "ЗЗ": 1149,
+    "ЗС": 41,
+    "Б": 101
+  },
+  "hard_TCH_B_ZS": 429,
+  "hard_pct_flow": 20.1,
+  "och_pct_flow": 26.0,
+  "human_comments_total": 14876,
+  "human_by_type": {
+    "ТЧ": 3477,
+    "ЗС": 395,
+    "ОЧ": 3865,
+    "ЗЗ": 6229,
+    "Б": 910
+  },
+  "hard_human_msgs": 4782,
+  "hard_pct_comments": 32.1
+}

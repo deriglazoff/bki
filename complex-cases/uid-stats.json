@@ -1,0 +1,28 @@
+{
+  "source": "Описания задач Bitrix · группа Оспаривание КИ · янв–сен 2026",
+  "csv_tasks": 2131,
+  "desc": {
+    "has_uid": 1886,
+    "data_no_uid": 238,
+    "no_data_line": 7,
+    "pct_has_uid": 88.5,
+    "clients_with_uid": 1043,
+    "clients_total": 1141,
+    "clients_pct": 91.4
+  },
+  "pdf": {
+    "has_uid": 1588,
+    "no_uid": 520,
+    "scan_no_text": 10,
+    "no_pdf": 13,
+    "pct_has_uid": 74.5
+  },
+  "cross": {
+    "both": 1549,
+    "desc_only": 337,
+    "pdf_only": 39,
+    "neither": 206,
+    "union": 1925,
+    "union_pct": 90.3
+  }
+}
