@@ -11,18 +11,21 @@ DML выгрузок (статусы 13/21/23, `KI_BKI_PrepareData`) — в [02-
 
 ## 1. Клиент по ФИО или паспорту
 
-Серия в ПО слитно (`8012`, не `80 12`). Несколько строк `Partner_FIO` — смотреть актуальную через `Partner.keyFIO` (запрос 2).
+Серия в ПО слитно (`8012`, не `80 12`). Сначала по паспорту; если нет — по ФИО. Несколько строк `Partner_FIO` — смотреть актуальную через `Partner.keyFIO` (запрос 2).
 
 ```sql
-SELECT TOP 30
-  fio.keyPart, fio.keyFIO, fio.FIO, fio.nam1, fio.nam2, fio.nam3, fio.DataB,
-  ped.Serial, ped.Number, ped.IssuedDate, ped.IssuedCode, ped.ForDel
-FROM cz_newCP.dbo.Partner_FIO fio
-LEFT JOIN cz_newCP.dbo.Partner_Edit_Documents ped
-  ON ped.keyPart = fio.keyPart AND ISNULL(ped.ForDel, 0) <> -1
-WHERE fio.FIO LIKE N'%Фамилия%'
-   OR (ped.Serial = N'8012' AND ped.Number = N'692517')
-ORDER BY fio.keyPart DESC;
+-- Паспорт
+SELECT PED.keyPart
+FROM cz_newCP.dbo.Partner_Edit_Documents AS PED
+WHERE ISNULL(PED.ForDel, 0) <> -1
+  AND PED.Serial = N'8012' AND PED.Number = N'692517'
+GROUP BY PED.keyPart;
+
+-- Если по паспорту нет — ФИО. Если паспорт дал keyPart — подставляем его.
+SELECT PF.keyPart
+FROM cz_newCP.dbo.Partner_FIO AS PF
+WHERE PF.keyPart = 3374111
+   OR PF.FIO = N'Сах Ли Эриковна';
 ```
 
 ## 2. Актуальное ФИО (не история)
@@ -59,22 +62,31 @@ FROM cz_newCP.dbo.Partner_OldPasp
 WHERE keyPart = /* keyPart */;
 ```
 
-Титул, который уже уходил в бюро (`CZ_BKI`): если здесь уже «как в заявлении» — 3.1 не готовить, пока ЛК не покажет иное.
+Титул, который уже уходил в бюро (`CZ_BKI`): смотреть только успешно отправленные выгрузки (`KI_UnloadList.Status` IN (21, 17); `keyRec` из `KI_FL1_name` / `KI_FL4_id` = `keyCHL`). На один `keyCHL` в `KI_UnloadList` может быть несколько строк — по числу бюро (`keyKUL` разные: только НБКИ или НБКИ+ОКБ и т.д.). Если здесь уже «как в заявлении» — 3.1 не готовить, пока ЛК не покажет иное.
 
 ```sql
-SELECT DISTINCT lastName, firstName, midName
-FROM CZ_BKI.dbo.KI_FL1_name WHERE keyPart = /* keyPart */;
+SELECT KUL.keyKUL, KUL.keyCB, KUL.[Status],
+       fl1.lastName, fl1.firstName, fl1.midName
+FROM CZ_BKI.dbo.KI_FL1_name AS fl1
+INNER JOIN CZ_BKI.dbo.KI_UnloadList AS KUL ON KUL.keyCHL = fl1.keyRec
+WHERE fl1.keyPart = /* keyPart */
+  AND KUL.[Status] IN (21, 17);
 
-SELECT DISTINCT idSeries, idNum, issueDate, deptCode
-FROM CZ_BKI.dbo.KI_FL4_id WHERE keyPart = /* keyPart */;
+SELECT KUL.keyKUL, KUL.keyCB, KUL.[Status],
+       fl4.idSeries, fl4.idNum, fl4.issueDate, fl4.deptCode
+FROM CZ_BKI.dbo.KI_FL4_id AS fl4
+INNER JOIN CZ_BKI.dbo.KI_UnloadList AS KUL ON KUL.keyCHL = fl4.keyRec
+WHERE fl4.keyPart = /* keyPart */
+  AND KUL.[Status] IN (21, 17);
 ```
 
-Адрес (ТЧ FL8/FL9):
+Адрес (ТЧ FL8/FL9): FL8 — `TypeAddress = 1` (регистрация), FL9 — `TypeAddress = 2` (проживание).
 
 ```sql
 SELECT TOP 20 *
 FROM cz_newCP.dbo.Partner_Edit_Address
-WHERE keyPart = /* keyPart */;
+WHERE keyPart = /* keyPart */
+  AND TypeAddress IN (1, 2);
 ```
 
 ## 4. Договоры и УИД
@@ -124,10 +136,13 @@ FROM cz_newCP.dbo.Dogovor_GP
 WHERE keyDZ = /* keyDZ */
 ORDER BY DatPlat;
 
+-- Платежи: vid = 3
 SELECT mp.vid, v.NameSpr, mp.DatPlat, mp.Plateg, mp.Credit, mp.CreditOst
 FROM cz_newCP.dbo.MemberPay2 mp
 LEFT JOIN cz_newCP.dbo.SprAll1 v ON v.keyS = 104 AND v.nom = mp.vid
-WHERE mp.keyDZ = /* keyDZ */ AND ISNULL(mp.ForDel, 0) <> -1
+WHERE mp.keyDZ = /* keyDZ */
+  AND mp.vid = 3
+  AND ISNULL(mp.ForDel, 0) <> -1
 ORDER BY mp.DatPlat, mp.keyP;
 ```
 
@@ -170,11 +185,11 @@ FROM cz_newCP.dbo.Sett AS S
 WHERE S.keySett = @keyOH;
 ```
 
-Саммит → `WD01BB000002_…xlsx.zip.enc` на CancelCreditHistory@nbki.ru. ПКО → `ZW01RR000001_…`.
+Саммит → `WD01BB000002_…xlsx.zip.enc` на [CancelCreditHistory@nbki.ru](mailto:CancelCreditHistory@nbki.ru). ПКО → `ZW01RR000001_…`.
 
 ## 10. Шапка официального ответа
 
-Полный скрипт — [`docs/Ответы+на+оспаривания.sql`](../docs/Ответы+на+оспаривания.sql). В шапке только переменные:
+Полный скрипт — `docs/Ответы+на+оспаривания.sql`. В шапке только переменные:
 
 ```sql
 DECLARE @org smallint = 1,  -- 1 Саммит, 5 ПКО, 6 ДЗБР
