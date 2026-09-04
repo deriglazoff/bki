@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import base64
-import json
 import sys
 import time
 from pathlib import Path
@@ -12,6 +11,10 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from scripts.b24 import load_webhook  # noqa: E402
+
 PDF_ROOT = ROOT / "task-pdfs"
 FOLDER_IDS = ["436602", "436603", "436604", "436605", "436598", "436599", "436600", "436601"]
 GROUP_ID = 437
@@ -128,15 +131,6 @@ TITLES = {
     "436604": "ТЕСТ 436604 Алипкачева Н.А.",
     "436605": "ТЕСТ 436605 Сахибгареева Л.Э.",
 }
-
-
-def load_webhook() -> str:
-    env_url = __import__("os").environ.get("B24_DEFAULT_WEBHOOK")
-    if env_url:
-        return env_url.rstrip("/") + "/"
-    mcp = Path.home() / ".cursor" / "mcp.json"
-    data = json.loads(mcp.read_text(encoding="utf-8"))
-    return data["mcpServers"]["bitrix24"]["env"]["B24_DEFAULT_WEBHOOK"].rstrip("/") + "/"
 
 
 def call(session: requests.Session, webhook: str, method: str, payload: dict, timeout: int = 180) -> dict:

@@ -15,6 +15,8 @@ from urllib.parse import urlencode
 
 import requests
 
+from scripts.b24 import load_webhook
+
 ROOT = Path(r"C:\repos\bki")
 CSV_PATH = ROOT / "osparivanie-2026-tasks.csv"
 OUT_DIR = ROOT / "task-pdfs"
@@ -25,16 +27,6 @@ SELECT = ["ID", "TITLE", "DESCRIPTION", "UF_TASK_WEBDAV_FILES"]
 DISK_FILE_RE = re.compile(r"DISK\s+FILE\s+ID=(\d+)", re.I)
 ATTACHED_ID_RE = re.compile(r"attachedId=(\d+)", re.I)
 INVALID_WIN = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
-
-
-def load_webhook() -> str:
-    env = os.environ.get("B24_DEFAULT_WEBHOOK")
-    if env:
-        return env.rstrip("/") + "/"
-    mcp_path = Path.home() / ".cursor" / "mcp.json"
-    data = json.loads(mcp_path.read_text(encoding="utf-8"))
-    url = data["mcpServers"]["bitrix24"]["env"]["B24_DEFAULT_WEBHOOK"]
-    return url.rstrip("/") + "/"
 
 
 def batch_call(session: requests.Session, webhook: str, cmd: dict[str, str], retries: int = 5) -> dict:

@@ -14,17 +14,16 @@ description: >-
 
 Интервью не проводить. Задачу не закрывать.
 
-MCP: namespace `user-bitrix24-test`. Если tools недоступны — сначала `mcp_auth`.
+Bitrix: `python scripts/b24.py` ([документация вызова](../../../scripts/b24.py)). Параметры и BBCode — UTF-8 JSON и `--file`.
 
 ## 1. Взять задачу и файлы
 
 ID из URL `.../tasks/task/view/{id}/`.
 
-- `b24_tasks_get` — `chatId`.
-- `b24_call("tasks.task.get", { taskId, select: ["*", "UF_TASK_WEBDAV_FILES"] })` — массив `ufTaskWebdavFiles`. Это **attached object id**, не `disk.file` id.
-- На каждый id: `b24_call("disk.attachedObject.get", { id })` → `NAME`, `DOWNLOAD_URL`.
+- `python scripts/b24.py call tasks.task.get --file …` с `{"taskId": ID, "select": ["*", "UF_TASK_WEBDAV_FILES"]}` → `chatId`, массив `ufTaskWebdavFiles`. Это **attached object id**, не `disk.file` id.
+- На каждый id: `python scripts/b24.py call disk.attachedObject.get --file …` с `{"id": attachedId}` → `NAME`, `DOWNLOAD_URL`.
 
-Пакет НБКИ: взять **txt** (`ishod.txt` / `vhod.txt`, имена с «исх»/«вх»), если есть; PDF — только если txt нет. Скачивать **локально** по `DOWNLOAD_URL` вложения (`Invoke-WebRequest` / curl). `b24_disk_file_content` с MCP-хоста обычно 403 (WAF `/download/`).
+Пакет НБКИ: взять **txt** (`ishod.txt` / `vhod.txt`, имена с «исх»/«вх»), если есть; PDF — только если txt нет. Скачать: `python scripts/b24.py download DOWNLOAD_URL path`.
 
 Прочитать оба файла целиком. Шапка Вх (ФИО, паспорт, адрес, телефон) — идентификация, пока тот же факт не повторён в блоке «не согласен». Пустые подпункты без организаций — пропуск.
 
@@ -69,9 +68,9 @@ BBCode, факты из файлов, не общие слова.
 • {подтип} — {якорь из файла}
 ```
 
-В чате уже есть сообщение, которое начинается с «Классификация» → править его: `b24_call("im.message.update", { ID, MESSAGE })` (поле именно `MESSAGE`). Иначе создать: `b24_call("task.commentitem.add", { TASKID, FIELDS: { POST_MESSAGE } })`. `task.commentitem.getlist` / `.update` не использовать (позиционные аргументы, update часто `ACTION_NOT_ALLOWED`).
+В чате уже есть сообщение, которое начинается с «Классификация» → править его: `python scripts/b24.py call im.message.update --file …` с `{"ID": messageId, "MESSAGE": "…"}` (поле именно `MESSAGE`). Иначе создать: `python scripts/b24.py call task.commentitem.add --file …` с `{"TASKID": taskId, "FIELDS": {"POST_MESSAGE": "…"}}`. `task.commentitem.getlist` / `.update` не использовать (позиционные аргументы, update часто `ACTION_NOT_ALLOWED`).
 
-Проверка: `im.dialog.messages.get` с `DIALOG_ID` = `"chat{chatId}"` — в последнем комментарии теги и подтипы совпадают с шагом 2.
+Проверка: `python scripts/b24.py call im.dialog.messages.get --file …` с `{"DIALOG_ID": "chat{chatId}"}` — в последнем комментарии теги и подтипы совпадают с шагом 2.
 
 Если запись отклонена — отдать BBCode пользователю и сказать вставить в комментарий задачи.
 
