@@ -4,12 +4,13 @@
 from __future__ import annotations
 
 import base64
-import json
 import sys
 import time
 from pathlib import Path
 
 import requests
+
+from scripts.b24 import load_webhook
 
 ROOT = Path(r"C:\repos\bki")
 PDF_ROOT = ROOT / "task-pdfs"
@@ -128,15 +129,6 @@ TITLES = {
     "436604": "ТЕСТ 436604 Алипкачева Н.А.",
     "436605": "ТЕСТ 436605 Сахибгареева Л.Э.",
 }
-
-
-def load_webhook() -> str:
-    env_url = __import__("os").environ.get("B24_DEFAULT_WEBHOOK")
-    if env_url:
-        return env_url.rstrip("/") + "/"
-    mcp = Path.home() / ".cursor" / "mcp.json"
-    data = json.loads(mcp.read_text(encoding="utf-8"))
-    return data["mcpServers"]["bitrix24"]["env"]["B24_DEFAULT_WEBHOOK"].rstrip("/") + "/"
 
 
 def call(session: requests.Session, webhook: str, method: str, payload: dict, timeout: int = 180) -> dict:

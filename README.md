@@ -31,6 +31,6 @@
 
 ## Окружение
 
-- Bitrix MCP: `user-bitrix24-test`
+- Bitrix: входящий webhook REST, [`scripts/b24.py`](scripts/b24.py). Webhook — env `B24_DEFAULT_WEBHOOK` или `~/.cursor/mcp.json` (`X-B24-Webhook` / `B24_DEFAULT_WEBHOOK`)
 - ПО (read-only): [`.cursor/mcp.json`](.cursor/mcp.json) → `mssql-mcp` (нужен соседний `E:/repos/mcp-ms-sql`); иначе `sqlcmd` на `s-po-dev` / `cz_newCP`
-- После правки mcp.json — перезапустить MCP в Cursor
+- После правки mcp.json — перезапустить MCP в Cursor (это только SQL)

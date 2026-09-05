@@ -16,13 +16,13 @@ description: >-
 
 Правила типов — только из `classification.md`. Шаги решения — из `guide/` (не копировать сюда). Глоссарий — `CONTEXT.md`. Карта — `AGENTS.md`.
 
-MCP Bitrix: namespace `user-bitrix24-test` (`mcp_auth` при недоступности).
+Bitrix: `python scripts/b24.py` ([документация вызова](../../../scripts/b24.py)). Параметры и BBCode — UTF-8 JSON и `--file`.
 
 ## 0. ID и чат
 
 ID из URL `.../tasks/task/view/{id}/`.
 
-- `b24_tasks_get` → `chatId`.
+- `python scripts/b24.py call tasks.task.get --file …` с `{"taskId": ID, "select": ["*", "UF_TASK_WEBDAV_FILES"]}` → `chatId`.
 - Дальше шаги 1–5. Если Исх/Вх нет — стоп после шага 1, комментарий не писать (как classify).
 
 **Done when:** известны `taskId` и `chatId`.
@@ -31,10 +31,10 @@ ID из URL `.../tasks/task/view/{id}/`.
 
 Тот же съём, что у classify-osparivanie:
 
-- `b24_call("tasks.task.get", { taskId, select: ["*", "UF_TASK_WEBDAV_FILES"] })` → `ufTaskWebdavFiles` (**attached object id**).
-- На каждый id: `b24_call("disk.attachedObject.get", { id })` → `NAME`, `DOWNLOAD_URL`.
+- `python scripts/b24.py call tasks.task.get --file …` → `ufTaskWebdavFiles` (**attached object id**).
+- На каждый id: `python scripts/b24.py call disk.attachedObject.get --file …` → `NAME`, `DOWNLOAD_URL`.
 - Пакет НБКИ: **txt** (`ishod` / `vhod`, имена с «исх»/«вх»); PDF — только если txt нет.
-- Скачать **локально** по `DOWNLOAD_URL` (`Invoke-WebRequest` / curl). `b24_disk_file_content` с MCP-хоста обычно 403.
+- Скачать: `python scripts/b24.py download DOWNLOAD_URL path`.
 - Прочитать оба файла целиком.
 
 **Done when:** тексты Исх и Вх есть (или явное «файлов нет» → стоп).
@@ -119,11 +119,11 @@ keyPart=…; keyDZ / УИД / статусы / факты сверки по ко
 
 Запись:
 
-- Если правим существующее сообщение «Классификация» и оно станет полным решением — `b24_call("im.message.update", { ID, MESSAGE })`.
-- Иначе / если уже есть короткий classify и нужен полный отчёт — `b24_call("task.commentitem.add", { TASKID, FIELDS: { POST_MESSAGE } })` (один полный комментарий; старый classify не дублировать вторым «только теги»).
+- Если правим существующее сообщение «Классификация» и оно станет полным решением — `python scripts/b24.py call im.message.update --file …` (`ID`, `MESSAGE`).
+- Иначе / если уже есть короткий classify и нужен полный отчёт — `python scripts/b24.py call task.commentitem.add --file …` (`TASKID`, `FIELDS.POST_MESSAGE`) (один полный комментарий; старый classify не дублировать вторым «только теги»).
 - `task.commentitem.getlist` / `.update` не использовать.
 
-Проверка: `im.dialog.messages.get` с `DIALOG_ID` = `"chat{chatId}"` — в комментарии есть теги, ПО (или стоп SQL), решение, черновик.
+Проверка: `python scripts/b24.py call im.dialog.messages.get --file …` с `DIALOG_ID` = `"chat{chatId}"` — в комментарии есть теги, ПО (или стоп SQL), решение, черновик.
 
 Если запись отклонена — отдать BBCode пользователю.
 

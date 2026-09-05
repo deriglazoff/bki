@@ -28,8 +28,10 @@ Assistive-контур: комментарий = классификация + с
 
 ## Инструменты
 
-- Bitrix: MCP namespace `user-bitrix24-test` (`mcp_auth` при недоступности).
-- Вложения задачи: скачивать **локально** по `DOWNLOAD_URL`; с MCP-хоста `/download/` часто 403.
+- Bitrix: входящий webhook REST через [`scripts/b24.py`](scripts/b24.py) (не MCP).
+  Webhook: env `B24_DEFAULT_WEBHOOK`, иначе `~/.cursor/mcp.json` (`B24_DEFAULT_WEBHOOK` или заголовок `X-B24-Webhook`).
+  Длинные параметры и BBCode — `--file` (UTF-8 JSON).
+  Вложения: `python scripts/b24.py download DOWNLOAD_URL path`.
 
 ## SQL / ПО
 
